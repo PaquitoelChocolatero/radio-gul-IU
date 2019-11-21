@@ -2,10 +2,10 @@
   <div id="app">
     <Header />
     <twitter id='twitter'>
-      <div slot="loading">loading .....</div>
-      <a class="twitter-timeline" data-chrome="nofooter noheader noscrollbar" data-tweet-limit="5" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
+      <div slot="loading">loading ...</div>
+      <a class="twitter-timeline" data-chrome="nofooter noheader noscrollbar" data-tweet-limit="4" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
     </twitter>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style>
+  html{
+    height: 100%;
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
