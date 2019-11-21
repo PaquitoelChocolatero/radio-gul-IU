@@ -5,12 +5,12 @@
                 <img src="../assets/logo_light-gray.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
                 <a class="name" title="Grupo de Usuarios de Linux">GUL</a>
             </div>
-            <!-- <div id='center'>
-                <a href="mailto:info@gul.uc3m.es" target="_blank"><img alt='Email' class='icon' src='../assets/mail.png'></a>
-                <a href="https://twitter.com/guluc3m" target="_blank"><img alt='Twitter' class='icon' src='../assets/twitter.png'></a>
-                <a href="https://www.youtube.com/user/guluc3m" target="_blank"><img alt='YouTube' class='icon' src='../assets/youtube.png'></a>
-                <a href="https://github.com/guluc3m" target="_blank"><img alt="GitHub" class='icon' src='../assets/github.png'></a>
-            </div> -->
+            <div id='center'>
+                <!-- <a href="mailto:info@gul.uc3m.es" target="_blank"><img alt='Email' class='icon' src='../assets/mail.png'></a> -->
+                <a href="https://twitter.com/guluc3m" target="_blank"><img alt='Twitter' class='icon' src='../assets/twitter.svg'></a>
+                <!-- <a href="https://www.youtube.com/user/guluc3m" target="_blank"><img alt='YouTube' class='icon' src='../assets/youtube.png'></a> -->
+                <a href="https://github.com/guluc3m" target="_blank"><img alt="GitHub" class='icon' src='../assets/github.svg'></a>
+            </div>
             <div id='right'>
                 <img src="../assets/admin.png" alt="admin" width="40" height="40">
             </div>
