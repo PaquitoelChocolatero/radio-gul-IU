@@ -3,7 +3,7 @@
     <Header />
     <twitter id='twitter'>
       <div slot="loading">loading ...</div>
-      <a class="twitter-timeline" data-chrome="nofooter noheader noscrollbar" data-tweet-limit="4" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
+      <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="4" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
     </twitter>
     <Footer />
   </div>

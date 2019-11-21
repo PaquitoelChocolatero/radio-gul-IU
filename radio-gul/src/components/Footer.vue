@@ -68,23 +68,25 @@ export default {
         margin-left: 10px;
         margin-top: 10px;
         cursor: pointer;
+        outline: none;
     }
     #center{
         padding-top: 20px;
         padding-left: 28%;
         padding-right: 28%;
         cursor: pointer;
-        /* width: 400px; */
         width: 100%;
     }
     #rrss{
         margin-left: 25px;
+        outline: none;
     }
     #right{
         float: right;
         margin-top: -40px;
         margin-right: 10px;
         cursor: pointer;
+        outline: none;
     }
     #text{
         padding-top: 40px;
