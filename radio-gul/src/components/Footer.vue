@@ -1,15 +1,20 @@
 <template>
     <footer>
-        <div id='logos'>
+        <div class='logos'>
             <div id='left'>
-                <img src="../assets/logo_light-gray.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
-                <a class="name" title="Grupo de Usuarios de Linux">GUL</a>
+                <a href="https://gul.es" target="_blank">
+                    <img src="../assets/logo-gul.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
+                    <a title="Grupo de Usuarios de Linux">GUL</a>
+                </a>
             </div>
             <div id='center'>
-                <!-- <a href="mailto:info@gul.uc3m.es" target="_blank"><img alt='Email' class='icon' src='../assets/mail.png'></a> -->
-                <a href="https://twitter.com/guluc3m" target="_blank"><img alt='Twitter' class='icon' src='../assets/twitter.svg'></a>
-                <!-- <a href="https://www.youtube.com/user/guluc3m" target="_blank"><img alt='YouTube' class='icon' src='../assets/youtube.png'></a> -->
-                <a href="https://github.com/guluc3m" target="_blank"><img alt="GitHub" class='icon' src='../assets/github.svg'></a>
+                <a id='rrss' href="mailto:info@gul.uc3m.es" target="_blank"><img alt='Email' class='icon' src='../assets/mail.png'></a>
+                <a id='rrss' href="https://twitter.com/guluc3m" target="_blank"><img alt='Twitter' class='icon' src='../assets/twitter.png'></a>
+                <a id='rrss' href="https://www.youtube.com/user/guluc3m" target="_blank"><img alt='YouTube' class='icon' src='../assets/youtube.svg'></a>
+                <a id='rrss' href="https://github.com/guluc3m" target="_blank">
+                    <img alt="GitHub" class='icon' src='../assets/github.png'>
+                    <a title="Fork us">Fork us on GitHub</a>
+                </a>
             </div>
             <div id='right'>
                 <img src="../assets/admin.png" alt="admin" width="40" height="40">
@@ -37,33 +42,51 @@ export default {
         color: white;
         font-size: 0.75em;
     }
+    a{
+        color: white;
+    }
+    a:hover{
+        text-decoration: none;
+    }
     footer {
         clear: both;
         bottom: 0;
         width: 100%;
         background-color: #424242;
     }
-    #logos{
-        top: 0;
+    .icon{
+        width: 30px;
+    }
+    .logos{
         color: white;
+        display:inline;
+        text-align:center;
+        height: 45px;
     }
     #left{
-        margin-left: 1%;
-        margin-top: 1%;
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
         cursor: pointer;
-        width: 10%;
     }
     #center{
-        margin-top: 1%;
+        padding-top: 20px;
+        padding-left: 28%;
+        padding-right: 28%;
         cursor: pointer;
-        width: 10%;
+        /* width: 400px; */
+        width: 100%;
+    }
+    #rrss{
+        margin-left: 25px;
     }
     #right{
-        margin-top: 1%;
+        float: right;
+        margin-top: -40px;
+        margin-right: 10px;
         cursor: pointer;
-        width: 10%;
     }
     #text{
-        margin-top: 4%;
+        padding-top: 40px;
     }
 </style>
