@@ -1,57 +1,33 @@
 <template>
   <div id="app">
-    <Header />
-    <twitter id='twitter'>
-      <div slot="loading">loading ...</div>
-      <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="4" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
-    </twitter>
-    <Footer />
+    <router-link to="/"></router-link>
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div> -->
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-import Vue from 'vue'
-import twitter from 'vue-twitter'
-
-Vue.use(twitter)
-
-export default {
-  name: 'app',
-  components: {
-    Header,
-    Footer
-  }
-}
-</script>
-
 <style>
-  html{
-    height: 100%;
-  }
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-  }
-  /* If on mobile */
-  @media (max-width: 768px) {
-    #twitter{
-      margin-top: 1%;
-      margin-right: 1%;
-      float: right;
-      width: 33%;
-    }
-  }
-  /* If on desktop */
-  @media (min-width: 768px) {
-    #twitter{
-      margin-top: 1%;
-      margin-right: 1%;
-      float: right;
-      width: 20%;
-    }
-  }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
