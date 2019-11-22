@@ -1,8 +1,8 @@
 <template>
     <div id='list'>
         <p id='title'>Programas</p>
-        <div v-bind:key='program.id' v-for='program in programs'>
-            <Program v-bind:program='program' />
+        <div id='grid'>
+            <Program v-bind:key='program.id' v-for='program in programs' v-bind:program='program' />
         </div>
     </div>
 </template>
@@ -27,7 +27,32 @@ export default {
                     id: 2,
                     name: 'MeetUC3M',
                     img: '../assets/meetuc3m.jpg'
-                }
+                },
+                {
+                    id: 3,
+                    name: 'test1',
+                    img: '../assets/meetuc3m.jpg'
+                },
+                {
+                    id: 4,
+                    name: 'test2',
+                    img: '../assets/meetuc3m.jpg'
+                },
+                {
+                    id: 5,
+                    name: 'test3',
+                    img: '../assets/meetuc3m.jpg'
+                },
+                {
+                    id: 6,
+                    name: 'test4',
+                    img: '../assets/meetuc3m.jpg'
+                },
+                {
+                    id: 7,
+                    name: 'test5',
+                    img: '../assets/meetuc3m.jpg'
+                },
             ]
         }
     }
@@ -41,6 +66,12 @@ export default {
         height: 100%;
         margin-top: 50px;
         margin-left: 1%;
+    }
+    #grid{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
     #title{
         text-align: left;
