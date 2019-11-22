@@ -1,11 +1,13 @@
 <template>
   <div id="home">
     <Header />
-    <ProgramList />
-    <twitter id='twitter'>
-      <div slot="loading">loading ...</div>
-      <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="4" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
-    </twitter>
+    <div id='central'>
+      <ProgramList />
+      <twitter id='twitter'>
+        <div slot="loading">loading ...</div>
+        <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='2' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
+      </twitter>
+    </div>
     <Footer />
   </div>
 </template>
@@ -38,6 +40,10 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
+  }
+  #central{
+    display:inline;
+    text-align:center;
   }
   /* If on mobile */
   @media (max-width: 768px) {
