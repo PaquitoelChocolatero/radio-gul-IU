@@ -1,6 +1,7 @@
 <template>
   <div id="home">
     <Header />
+    <ProgramList />
     <twitter id='twitter'>
       <div slot="loading">loading ...</div>
       <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit="4" href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
@@ -12,6 +13,7 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+import ProgramList from '../components/ProgramList.vue'
 import Vue from 'vue'
 import twitter from 'vue-twitter'
 
@@ -21,7 +23,8 @@ export default {
   name: 'home',
   components: {
     Header,
-    Footer
+    Footer,
+    ProgramList
   }
 }
 </script>
