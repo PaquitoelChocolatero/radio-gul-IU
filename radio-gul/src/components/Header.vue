@@ -2,7 +2,7 @@
   <div class="header" :style="{ backgroundImage: `url(${bg})` }">
     <div class="bar">
       <form action="">
-        <input type="search" v-on:keyup.enter="submit()">
+        <input type="search" v-on:keyup.enter="submit()" ref='searchInput'>
         <i class="fa fa-search"></i>
       </form>
     </div>
@@ -17,20 +17,26 @@
 
 <script>
 import bg from '../assets/bg.jpg'
+
 export default {
     name: 'Header',
     methods: {
       submit(){
-        this.$router.push('search')
+        this.$router.push({
+          name: 'search',
+          params: {
+            q: this.$refs.searchInput.value
+          }
+        })
       },
       home(){
         this.$router.push('/')
       }
     },
     data() {
-        return {
-            bg
-        }
+      return {
+          bg
+      }
   }
 }
 </script>
