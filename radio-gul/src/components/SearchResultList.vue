@@ -1,6 +1,6 @@
 <template>
     <div id='list'>
-        <p id='title'>Resuls for test</p>
+        <p id='title'>Resuls for {{ this.$route.params }}</p>
         <div id='grid'>
             <SearchResult v-bind:key='program.id' v-for='program in programs' v-bind:program="program" />
         </div>
