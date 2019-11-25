@@ -2,7 +2,7 @@
     <div id='list'>
         <p id='title'>Programas</p>
         <div id='grid'>
-            <Program v-bind:key='program.id' v-for='program in programs' v-bind:program='program' />
+            <Program v-bind:key='program.id' v-for='program in programs' v-bind:program="program" />
         </div>
     </div>
 </template>
@@ -21,37 +21,37 @@ export default {
                 {
                     id: 1,
                     name: '/dev/random',
-                    img: '../assets/devrandom.jpg'
+                    img: require('../assets/devrandom.jpg')
                 },
                 {
                     id: 2,
                     name: 'MeetUC3M',
-                    img: '../assets/meetuc3m.jpg'
+                    img: require('../assets/meetuc3m.jpg')
                 },
                 {
                     id: 3,
                     name: 'test1',
-                    img: '../assets/meetuc3m.jpg'
+                    img: require('../assets/meetuc3m.jpg')
                 },
                 {
                     id: 4,
                     name: 'test2',
-                    img: '../assets/meetuc3m.jpg'
+                    img: require('../assets/meetuc3m.jpg')
                 },
                 {
                     id: 5,
                     name: 'test3',
-                    img: '../assets/meetuc3m.jpg'
+                    img: require('../assets/meetuc3m.jpg')
                 },
                 {
                     id: 6,
                     name: 'test4',
-                    img: '../assets/meetuc3m.jpg'
+                    img: require('../assets/meetuc3m.jpg')
                 },
                 {
                     id: 7,
                     name: 'test5',
-                    img: '../assets/meetuc3m.jpg'
+                    img: require('../assets/meetuc3m.jpg')
                 },
             ]
         }
