@@ -2,7 +2,7 @@
     <div id='list'>
         <p id='title'>Programas</p>
         <div id='grid'>
-            <Program v-bind:key='program.id' v-for='program in programs' v-bind:program="program" />
+            <Program v-bind:key='program.id' v-for='program in programs' v-bind:program="program" id='card' />
         </div>
     </div>
 </template>
@@ -71,7 +71,10 @@ export default {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: auto auto auto;
+        display: inline-grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+        padding-top: 5%;
     }
     #title{
         text-align: left;
@@ -80,5 +83,12 @@ export default {
         border-bottom: 1px solid black;
         width: 100%;
         color: black;
+    }
+    #card{
+        width: 50%;
+        height: 85%;
+        justify-self: center;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 </style>

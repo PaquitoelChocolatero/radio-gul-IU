@@ -41,6 +41,8 @@ export default {
         text-align: center; 
         color: white;
         font-size: 0.75em;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
     a{
         color: white;
@@ -52,6 +54,7 @@ export default {
         clear: both;
         bottom: 0;
         width: 100%;
+        margin-bottom: 0%;
         background-color: #424242;
     }
     .icon{

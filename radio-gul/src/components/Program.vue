@@ -1,7 +1,7 @@
 <template>
     <div>
         <img v-bind:src='program.img'>
-        <p>{{ program.name }}</p>
+        <p><strong>{{ program.name }}</strong></p>
     </div>
 </template>
 
@@ -14,15 +14,19 @@ export default {
 
 <style scoped>
     div{
-        background-color: #eeeeee;
-        height: 16%;
-        width: 15%;
+        background-color: white;
         margin-left: 5%;
-        margin-top: 5%;
         margin-bottom: 5%;
+        cursor: pointer;
     }
     div img{
         width: 90%;
         padding-top: 5%;
+    }
+    div p{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 110%;
+        color: black;
     }
 </style>
