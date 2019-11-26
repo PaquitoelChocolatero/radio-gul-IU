@@ -1,8 +1,8 @@
 <template>
     <div id='list'>
         <p id='title'>Resuls for '{{ this.$route.params.q }}'</p>
-        <div id='grid'>
-            <SearchResult v-bind:key='program.id' v-for='program in programs' v-bind:program="program" />
+        <div id='results'>
+            <SearchResult v-bind:key='program.id' v-for='program in programs' v-bind:program="program" id='result'/>
         </div>
     </div>
 </template>
@@ -67,11 +67,13 @@ export default {
         margin-top: 50px;
         margin-left: 1%;
     }
-    #grid{
+    #results{
         width: 100%;
         height: 100%;
-        display: list;
-        grid-template-columns: auto auto auto;
+    }
+    #result{
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     #title{
         text-align: left;
