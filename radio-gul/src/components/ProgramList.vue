@@ -9,6 +9,7 @@
 
 <script>
 import Program from "./Program.vue";
+import json from "@/data.json";
 
 export default {
     name: 'ProgramList',
@@ -17,43 +18,7 @@ export default {
     },
     data(){
         return{
-            programs: [
-                {
-                    id: 1,
-                    name: '/dev/random',
-                    img: require('../assets/devrandom.jpg')
-                },
-                {
-                    id: 2,
-                    name: 'MeetUC3M',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 3,
-                    name: 'test1',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 4,
-                    name: 'test2',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 5,
-                    name: 'test3',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 6,
-                    name: 'test4',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 7,
-                    name: 'test5',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-            ]
+            programs: json
         }
     }
 }
