@@ -3,7 +3,7 @@
         <div class='logos'>
             <div id='left'>
                 <a href="https://gul.es" target="_blank">
-                    <img src="../assets/logo-gul.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
+                    <img src="../assets/logo-gray.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
                     <a title="Grupo de Usuarios de Linux">GUL</a>
                 </a>
             </div>

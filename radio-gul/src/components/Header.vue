@@ -7,7 +7,7 @@
       </form>
     </div>
     <div class="centered">
-      <img src="../assets/logo.jpg" width="120px" v-on:click="home()" id='logo'>
+      <img src="../assets/logo-blue.jpg" width="120px" v-on:click="home()" id='logo'>
       <div class="typewriter">
         <h3>Nos gusta jugar con la tecnología</h3>
       </div>
