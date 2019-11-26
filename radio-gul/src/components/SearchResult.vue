@@ -1,17 +1,14 @@
 <template>
-    <!-- <div> -->
-        <!-- <img class="program-img" v-bind:src='program.img'>
+    <div>
+        <img class="program-img" v-bind:src="require(`@/assets/${program.img}`)">
         <p class="title">{{ program.name }}</p>
         <p class="description">{{ program.description }} </p>
-        <div class="card-footer">
-            <img class="share-button" src="assets/sharebutton.png">
-        </div>
-    </div> -->
-     <div class="card clearfix">
+    </div>
+     <!-- <div class="card clearfix">
                     <div class="card-header clearfix">
                         
                         <img src="img/Civ.jpeg" width="150" />
-                        <!-- <a class="button" href="#popup1"><h3>Civilization VI</h3></a> -->
+                        <a class="button" href="#popup1"><h3>Civilization VI</h3></a>
                     </div>
                     <div class="card-footer">
                             <p>4:20 31/7</p>
@@ -31,7 +28,7 @@
                                     </a>
                                 </div>
                         </div>
-                </div>
+                </div> -->
 </template>
 
 <script>

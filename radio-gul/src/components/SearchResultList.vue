@@ -2,7 +2,7 @@
     <div id='list'>
         <p id='title'>Resuls for '{{ this.$route.params.q }}'</p>
         <div id='results'>
-            <SearchResult v-bind:key='program.id' v-for='program in programs' v-bind:program="program" id='result'/>
+            <SearchResult v-bind:key='program.id' v-for='program in matches' v-bind:program="program" id='result'/>
         </div>
     </div>
 </template>
