@@ -20,6 +20,13 @@ export default {
         return{
             programs: json
         }
+    },
+    computed: {
+        matches: function() {
+            return this.programs.filter(function(p) {
+                return p.name.includes(this.$route.params.q)
+            })
+        }
     }
 }
 </script>

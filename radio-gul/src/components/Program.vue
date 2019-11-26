@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img v-bind:src='program.img'>
+        <img v-bind:src="require(program.img)">
         <p><strong>{{ program.name }}</strong></p>
     </div>
 </template>

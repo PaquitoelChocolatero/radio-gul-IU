@@ -9,7 +9,7 @@
 
 <script>
 import Program from "./Program.vue";
-import json from "@/data.json";
+import json from "@/data.json"
 
 export default {
     name: 'ProgramList',
