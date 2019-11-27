@@ -45,12 +45,20 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped>
   /* Esto no ase na */
   .headroom--top{
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin : 0;
+    height: 380px;
+  }
+
+  .top {
     background-position: left bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -74,7 +82,7 @@ export default {
     margin-bottom: 3%;
   }
   .typewriter h3 {
-    color: black;
+    color: white;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
