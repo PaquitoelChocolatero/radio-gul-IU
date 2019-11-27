@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <headroom>
     <header class="top headroom-top" :style="{ backgroundImage: `url(${bg})` }">
       <div class="bar">
@@ -7,22 +6,9 @@
           <input type="search" v-on:keyup.enter="submit()" ref='searchInput'>
           <i class="fa fa-search"></i>
         </form>
-=======
-  <div class="header" :style="{ backgroundImage: `url(${bg})` }">
-    <div class="bar">
-      <form action="">
-        <input type="search" v-on:keyup.enter="submit()" ref='searchInput'>
-        <i class="fa fa-search"></i>
-      </form>
-    </div>
-    <div class="centered">
-      <img src="../assets/logo-blue.jpg" width="120px" v-on:click="home()" id='logo'>
-      <div class="typewriter">
-        <h3>Nos gusta jugar con la tecnología</h3>
->>>>>>> 9bc6e66d84bff90133a09f200431f44e00ca3b5f
       </div>
       <div class="centered">
-        <img src="../assets/logo.jpg" width="120px" v-on:click="home()" id='logo'>
+        <img src="../assets/logo-blue.jpg" width="120px" v-on:click="home()" id='logo'>
         <div class="typewriter">
           <h3>Nos gusta jugar con la tecnología</h3>
         </div>
