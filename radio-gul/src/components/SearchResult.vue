@@ -1,34 +1,36 @@
 <template>
     <div>
-        <img class="program-img" v-bind:src="require(`@/assets/${program.img}`)">
-        <p class="title">{{ program.name }}</p>
-        <p class="description">{{ program.description }} </p>
-    </div>
-     <!-- <div class="card clearfix">
-                    <div class="card-header clearfix">
-                        
-                        <img src="img/Civ.jpeg" width="150" />
-                        <a class="button" href="#popup1"><h3>Civilization VI</h3></a>
-                    </div>
-                    <div class="card-footer">
-                            <p>4:20 31/7</p>
-                            <div class="social-button">
-                                    <a title="Click para compartir a través de distintas redes sociales">
-                                        <img alt="botón para compartir" height="30px" src="assets/share.png"/>
-                                        </a>
-                                </div>
-                            <div class="social-button">
-                                    <a title="Click para dejar un comentario de esta tarjeta">
-                                        <img alt="botón para comentar" height="30px" src="assets/comment.png"/>
-                                        </a>
-                                    </div>
-                            <div class="social-button">
-                                <a title="Clica para indicar que te gusta yokse bro">
-                                    <img alt="botón de me gusta" height="30px" src="assets/like.png"/>
-                                    </a>
-                                </div>
+        <div class="card clearfix">
+            <div class="card-header clearfix">
+                <img class="program-img" v-bind:src="require(`@/assets/${program.img}`)">
+                
+                <p class="title">{{ program.name }}</p>
+                <br><br><br>
+                <p class="description">{{ program.description }} </p>
+                
+            </div>
+
+            <!-- <div class="card-footer">
+                    <p>4:20 31/7</p>
+                    <div class="social-button">
+                            <a title="Click para compartir a través de distintas redes sociales">
+                                <img alt="botón para compartir" height="30px" src="assets/share.png"/>
+                                </a>
+                        </div>
+                    <div class="social-button">
+                            <a title="Click para dejar un comentario de esta tarjeta">
+                                <img alt="botón para comentar" height="30px" src="assets/comment.png"/>
+                                </a>
+                            </div>
+                    <div class="social-button">
+                        <a title="Clica para indicar que te gusta yokse bro">
+                            <img alt="botón de me gusta" height="30px" src="assets/like.png"/>
+                            </a>
                         </div>
                 </div> -->
+        </div>
+    </div>
+
 </template>
 
 <script>
@@ -39,29 +41,39 @@ export default {
 </script>
 
 <style scoped>
-    div{
+    /*div{
         background-color: white;
         height: 16%;
-        width: 90%;
+        width: 80%;
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 5%;
         margin-bottom: 5%;
+    }*/
+    .title{
+        font-weight: bold;
+        font-size: 2em; 
+        display: left;
+        float: left;
+        color:rgb(0, 0, 0, 0.7);
     }
+    .description{
+        display: inline;
+        position: relative;
+        text-align: justify;
+        color:rgb(0, 0, 0, 0.7);
+    }
+
     .program-img{
-        height: 90%;
+        height: 150px;
         padding-top: 1%;
         display: left;
+        float: left;
         padding-left: 1%;
     }
     .card {
-    text-align: left;
     text-indent: 5px;
     color: #FFF;
-    border : 2px solid rgb(49, 54, 64);
-    border-radius: 12px;
-    margin: 1%;
-    padding: 0.7%;
 }
 
     .clearfix {
