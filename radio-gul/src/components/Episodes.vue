@@ -1,5 +1,5 @@
 <template>
-  <div temporadas>
+  <div class = "temporadas">
       <h1>Temporadas</h1>
 
       <badger-accordion>
