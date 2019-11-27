@@ -3,7 +3,7 @@
         <div class='logos'>
             <div id='left'>
                 <a href="https://gul.es" target="_blank">
-                    <img src="../assets/logo-gul.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
+                    <img src="../assets/logo-gray.jpg" alt="Grupo de Usuarios de Linux" width="50" height="50">
                     <a title="Grupo de Usuarios de Linux">GUL</a>
                 </a>
             </div>
@@ -41,6 +41,8 @@ export default {
         text-align: center; 
         color: white;
         font-size: 0.75em;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
     a{
         color: white;
@@ -52,6 +54,7 @@ export default {
         clear: both;
         bottom: 0;
         width: 100%;
+        margin-bottom: 0%;
         background-color: #424242;
     }
     .icon{

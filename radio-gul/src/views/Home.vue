@@ -39,7 +39,7 @@ export default {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+    background-color: #f2f2f3;
   }
   #central{
     display:inline;
@@ -52,6 +52,8 @@ export default {
       margin-right: 1%;
       float: right;
       width: 33%;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
   /* If on desktop */
@@ -61,6 +63,8 @@ export default {
       margin-right: 1%;
       float: right;
       width: 20%;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 </style>

@@ -1,13 +1,14 @@
 <template>
     <div id='list'>
         <p id='title'>Resuls for '{{ this.$route.params.q }}'</p>
-        <div id='grid'>
-            <SearchResult v-bind:key='program.id' v-for='program in programs' v-bind:program="program" />
+        <div id='results'>
+            <SearchResult v-bind:key='program.id' v-for='program in matches' v-bind:program="program" id='result'/>
         </div>
     </div>
 </template>
 
 <script>
+import json from "@/data.json";
 import SearchResult from "./SearchResult.vue";
 
 export default {
@@ -17,43 +18,15 @@ export default {
     },
     data(){
         return{
-            programs: [
-                {
-                    id: 1,
-                    name: '/dev/random',
-                    img: require('../assets/devrandom.jpg')
-                },
-                {
-                    id: 2,
-                    name: 'MeetUC3M',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 3,
-                    name: 'test1',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 4,
-                    name: 'test2',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 5,
-                    name: 'test3',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 6,
-                    name: 'test4',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-                {
-                    id: 7,
-                    name: 'test5',
-                    img: require('../assets/meetuc3m.jpg')
-                },
-            ]
+            programs: json
+        }
+    },
+    computed: {
+        matches() {
+            let matches = this.programs.filter((program) => {
+                return program.name.toLowerCase().includes(this.$route.params.q.toLowerCase());
+            })
+            return matches;
         }
     }
 }
@@ -67,11 +40,13 @@ export default {
         margin-top: 50px;
         margin-left: 1%;
     }
-    #grid{
+    #results{
         width: 100%;
         height: 100%;
-        display: list;
-        grid-template-columns: auto auto auto;
+    }
+    #result{
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     #title{
         text-align: left;
