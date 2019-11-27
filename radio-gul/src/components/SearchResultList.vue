@@ -22,10 +22,11 @@ export default {
         }
     },
     computed: {
-        matches: function() {
-            return this.programs.filter(function(p) {
-                return p.name.includes(this.$route.params.q)
+        matches() {
+            let matches = this.programs.filter((program) => {
+                return program.name.toLowerCase().includes(this.$route.params.q.toLowerCase());
             })
+            return matches;
         }
     }
 }
