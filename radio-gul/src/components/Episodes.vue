@@ -1,20 +1,65 @@
 <template>
   <div temporadas>
       <h1>Temporadas</h1>
-      <div v-on:click='jump()'>
-          <h2>Test</h2>
-      </div>
 
       <badger-accordion>
         <badger-accordion-item>
-          <template slot="header">First Accordion Header</template>
-          <template slot="content">First Accordion Content</template>
+          <template slot="header">Temporada 1</template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 1: Luke</p>
+            </div>
+          </template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 2: Leia</p>
+            </div>
+          </template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 3: Anakin</p>
+            </div>
+          </template>
         </badger-accordion-item>
 
         <badger-accordion-item>
-          <template slot="header">Second Accordion Header</template>
-          <template slot="content">Second Accordion Content</template>
+          <template slot="header">Temporada 2</template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 1: Luke</p>
+            </div>
+          </template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 2: Leia</p>
+            </div>
+          </template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 3: Anakin</p>
+            </div>
+          </template>
         </badger-accordion-item>
+
+        <badger-accordion-item>
+          <template slot="header">Temporada 3</template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 1: Luke</p>
+            </div>
+          </template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 2: Leia</p>
+            </div>
+          </template>
+          <template slot="content">
+            <div v-on:click='jump()'>
+                <p>Episodio 3: Anakin</p>
+            </div>
+          </template>
+        </badger-accordion-item>
+
       </badger-accordion>
   </div>
 </template>
