@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import json from "@/data.json";
+import json from "@/jsons/data.json";
 import SearchResult from "./SearchResult.vue";
 
 export default {

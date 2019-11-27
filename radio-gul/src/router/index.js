@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Search from '../views/Search.vue'
 import Program from '../views/Program.vue'
+import Player from '../views/Player.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
     path: '/p=:q',
     name: 'program',
     component: Program
+  },
+  {
+    path: '/p=:q/:season-:episode-:name',
+    name: 'player',
+    component: Player
   }
 ]
 
