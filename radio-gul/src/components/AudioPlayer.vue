@@ -19,9 +19,12 @@ export default {
                 container: "#container",
                 waveColor: '#39A7DA',
                 progressColor: '#5c6bc0',
-                barWidth: 3
-            });
-            this.wavesurfer.load("https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3");
+                barWidth: 3,
+                barRadius: 3,
+                cursorWidth: 1,
+                height: 200,
+                barGap: 3            });
+            this.wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
         }
     },
     computed: {
