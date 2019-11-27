@@ -6,8 +6,10 @@
                 
                 <p class="title">{{ program.name }}</p>
                 <br><br><br>
-                <p class="description">{{ program.description }} </p>
                 
+                <div class= "des">
+                <p class="description">{{ program.description }} </p>
+                </div>
             </div>
 
             <!-- <div class="card-footer">
@@ -57,10 +59,15 @@ export default {
         float: left;
         color:rgb(0, 0, 0, 0.7);
     }
+    .des{
+       
+        text-align: justify;
+    }
     .description{
         display: inline;
         position: relative;
         text-align: justify;
+        text-align: left;
         color:rgb(0, 0, 0, 0.7);
     }
 
@@ -70,6 +77,7 @@ export default {
         display: left;
         float: left;
         padding-left: 1%;
+        padding-right: 2%;
     }
     .card {
     text-indent: 5px;
