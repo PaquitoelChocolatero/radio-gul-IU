@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-on:click="jump()">
         <img v-bind:src="require(`@/assets/${program.img}`)">
         <p><strong>{{ program.name }}</strong></p>
     </div>
@@ -8,7 +8,22 @@
 <script>
 export default {
     name: 'Program',
-    props: ['program']
+    props: ['program'],
+    methods: {
+        jump(){
+            this.$router.push({
+                name: 'program',
+                params: {
+                    q: this.removeSpecialChars(this.program.name)
+                }
+            })
+        },
+        removeSpecialChars(str) {
+            return str.replace(/(?!\w|\s)./g, '')
+                .replace(/\s+/g, ' ')
+                .replace(/^(\s*)([\W\w]*)(\b\s*$)/g, '$2');
+        }
+    }
 }
 </script>
 
