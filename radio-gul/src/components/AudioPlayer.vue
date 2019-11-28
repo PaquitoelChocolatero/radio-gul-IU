@@ -1,5 +1,7 @@
 <template>
-  <div id="container"></div>
+  <div id="container">
+
+  </div>
 </template>
 
 <script>
@@ -23,7 +25,9 @@ export default {
                 barRadius: 3,
                 cursorWidth: 1,
                 height: 200,
-                barGap: 3            });
+                barGap: 1,
+                hideScrollbar: true
+            });
             this.wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
         }
     },
@@ -39,10 +43,12 @@ export default {
 
 <style scoped>
     #container{
-        width: 70%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 5%;
         margin-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
         background-color: white;
         cursor: pointer;
         border-radius: 5px;
