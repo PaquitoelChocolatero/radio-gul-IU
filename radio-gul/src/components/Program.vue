@@ -14,9 +14,7 @@ export default {
             this.$router.push({
                 name: 'program',
                 params: {
-                    q: this.removeSpecialChars(this.program.name)
-                },
-                props: {
+                    q: this.removeSpecialChars(this.program.name),
                     program: this.program
                 }
             })

@@ -7,11 +7,32 @@
         "seasons": [
             {
                 "id": 10001,
-                "name": "2019",
+                "name": "Temporada 2019",
                 "episodes": [
                     {
                         "id": 100010001,
                         "name": "test01",
+                        "file": "test01-devrandom.mp3"
+                    },
+                    {
+                        "id": 100010002,
+                        "name": "test01 test1",
+                        "file": "test01-devrandom.mp3"
+                    }
+                ]
+            },
+            {
+                "id": 10002,
+                "name": "Temporada 2019 test",
+                "episodes": [
+                    {
+                        "id": 100020001,
+                        "name": "test01 test2",
+                        "file": "test01-devrandom.mp3"
+                    },
+                    {
+                        "id": 100020002,
+                        "name": "test01 test3",
                         "file": "test01-devrandom.mp3"
                     }
                 ]

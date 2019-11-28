@@ -23,9 +23,7 @@ export default {
     Desc,
     Episodes
   },
-  data(){
-    program: this.$route.props.program
-  }
+  props: ['program']
 }
 </script>
 

@@ -21,9 +21,7 @@ const routes = [
     path: '/p=:q',
     name: 'program',
     component: Program,
-    props: {
-      program: true
-    }
+    props: true
   },
   {
     path: '/p=:q/:season-:episode-:name',

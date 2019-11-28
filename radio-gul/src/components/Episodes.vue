@@ -1,23 +1,13 @@
 <template>
   <div class = "temporadas">
-      <p id = "title">Temporadas {{ prograrm.name }}</p>
+      <p id = "title">Temporadas</p>
       <div v-bind:key='season.id' v-for='season in program.seasons' class="accordion">
         <badger-accordion>
           <badger-accordion-item>
-            <template slot="header">Temporada 1</template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 1: Luke</p>
-              </div>
-            </template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 2: Leia</p>
-              </div>
-            </template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 3: Anakin</p>
+            <template slot="header">{{ season.name }}</template>
+            <template v-for='episode in season.episodes' slot="content">
+              <div v-bind:key='episode.id' v-on:click='jump()'>
+                  <p>{{ episode.name }}</p>
               </div>
             </template>
           </badger-accordion-item>
