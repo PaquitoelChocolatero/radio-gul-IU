@@ -6,7 +6,7 @@
         <div id="container">
         </div>
         <div id='space'>
-            <img v-bind:src="image" v-on:click="play()" id="play">
+            <img v-bind:src="image" @click="play()" id="play" />
         </div>
     </div>
 </template>
@@ -61,9 +61,9 @@ export default {
 
 <style scoped>
     #play{
-        width: 50%;
+        width: 30%;
         align-item: center;
-        margin-top: 30%;
+        margin-top: 25%;
     }
     #row{
         width: 90%;
@@ -76,12 +76,12 @@ export default {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: grid;
         display: inline-grid;
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 15% 70% 15%;
     }
     #logo{
-        width: 95%;
+        width: 60%;
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 3%;
         border-radius: 3px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
