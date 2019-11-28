@@ -1,6 +1,6 @@
 <template>
   <div class = "temporadas">
-      <h1>Temporadas</h1>
+      <p id = "title">Temporadas</p>
       <div class = "accordion">
         <badger-accordion>
           <badger-accordion-item>
@@ -92,11 +92,23 @@ export default {
 
 <style scoped>
 
-.temporadas {}
+.temporadas {
+  padding-top: 1%;
+}
+
+#title {
+  text-align: left;
+  margin-left: 51%;
+  font-size: 1.2em;
+  border-bottom: 1px solid black;
+  width: 47%;
+  color: black;
+}
 
 .accordion {
   background-color: white;
-  margin-left: 5%;
+  width: 47%;
+  margin-left: 51%;
   margin-bottom: 5%;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
