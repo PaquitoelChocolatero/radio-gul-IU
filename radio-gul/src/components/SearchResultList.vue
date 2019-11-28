@@ -45,6 +45,7 @@ export default {
         height: 100%;
     }
     #result{
+        margin-bottom: 2%;
         border-radius: 3px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
