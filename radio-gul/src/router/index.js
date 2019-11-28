@@ -20,7 +20,10 @@ const routes = [
   {
     path: '/p=:q',
     name: 'program',
-    component: Program
+    component: Program,
+    props: {
+      program: true
+    }
   },
   {
     path: '/p=:q/:season-:episode-:name',

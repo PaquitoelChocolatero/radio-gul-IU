@@ -2,8 +2,8 @@
   <div id="program">
     <Header />
     <div id='central'>
-      <Desc />
-      <Episodes />
+      <Desc v-bind:program='program' />
+      <Episodes v-bind:program='program' />
     </div>
     <Footer />
   </div>
@@ -22,6 +22,9 @@ export default {
     Footer,
     Desc,
     Episodes
+  },
+  data(){
+    program: this.$route.props.program
   }
 }
 </script>

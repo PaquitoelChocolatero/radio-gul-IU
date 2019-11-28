@@ -2,7 +2,7 @@
   <div class = "maincard">
     <h1>Descripción</h1>
     <div class = "left">
-      <img src="../assets/logo-blue.jpg" width="120px" v-on:click="home()" id='logo'>
+      <img src="../assets/logo-blue.jpg" width="120px" id='program-img'>
     </div>
     <div class = "right">
       <p>Blablablablabla</p>
@@ -15,20 +15,20 @@
 
 <script>
 export default {
-  name: 'desc'
+  name: 'desc',
+  props: ['program']
 }
 </script>
 
 <style scoped>
   .maincard {
       background-color: white;
-      margin-left: 5%;
+      margin-left: 1%;
       margin-bottom: 5%;
-      border-radius: 3%;
-      cursor: pointer;
+      border-radius: 5px;
   }
 
-  h1 h2 h3 {
+  .h1 .h2 .h3 {
       text-align: left;
       margin-left: 1%;
       font-size: 1.2em;
@@ -37,7 +37,7 @@ export default {
       color: black;
   }
 
-  .img {
+  #program-img {
       width: 90%;
       padding-top: 5%;
   }

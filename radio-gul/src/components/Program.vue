@@ -15,6 +15,9 @@ export default {
                 name: 'program',
                 params: {
                     q: this.removeSpecialChars(this.program.name)
+                },
+                props: {
+                    program: this.program
                 }
             })
         },

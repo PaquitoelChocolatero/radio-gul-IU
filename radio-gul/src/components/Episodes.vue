@@ -1,48 +1,10 @@
 <template>
   <div class = "temporadas">
-      <p id = "title">Temporadas</p>
-      <div class = "accordion">
+      <p id = "title">Temporadas {{ prograrm.name }}</p>
+      <div v-bind:key='season.id' v-for='season in program.seasons' class="accordion">
         <badger-accordion>
           <badger-accordion-item>
             <template slot="header">Temporada 1</template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 1: Luke</p>
-              </div>
-            </template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 2: Leia</p>
-              </div>
-            </template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 3: Anakin</p>
-              </div>
-            </template>
-          </badger-accordion-item>
-
-          <badger-accordion-item>
-            <template slot="header">Temporada 2</template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 1: Luke</p>
-              </div>
-            </template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 2: Leia</p>
-              </div>
-            </template>
-            <template slot="content">
-              <div v-on:click='jump()'>
-                  <p>Episodio 3: Anakin</p>
-              </div>
-            </template>
-          </badger-accordion-item>
-
-          <badger-accordion-item>
-            <template slot="header">Temporada 3</template>
             <template slot="content">
               <div v-on:click='jump()'>
                   <p>Episodio 1: Luke</p>
@@ -86,7 +48,8 @@ export default {
         }
       })
     }
-  }
+  },
+  props: ['program']
 }
 </script>
 
@@ -113,6 +76,7 @@ export default {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .badger-accordion__panel {
   color: white;
   max-height: 75vh;
