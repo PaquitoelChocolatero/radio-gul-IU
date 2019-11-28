@@ -6,7 +6,7 @@
         <div id="container">
         </div>
         <div id='space'>
-            <img v-bind:src="image" @click="play()" id="play" />
+            <img v-bind:src="image" @click="trigger()" id="play" />
         </div>
     </div>
 </template>
@@ -23,7 +23,7 @@ export default {
         pause: require("@/assets/pause.png")
     }),
     async mounted() {
-            if (!this.wavesurfer) this.createWaveSurfer();
+        if (!this.wavesurfer) this.createWaveSurfer();
     },
     methods: {
         createWaveSurfer() {
@@ -38,21 +38,30 @@ export default {
                 barGap: 1,
                 hideScrollbar: true
             });
-            this.wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+
+
+
+            this.wavesurfer.on('finish', function () {
+                this.image=this.play;
+            });
+            this.wavesurfer.on('ready', function () {
+                this.wavesurfer.play();
+            });
+            
+            
+            
+            this.wavesurfer.loadBlob('@/audio/test01-devrandom.mp3');
         },
-        play() {
-            alert();
-
-            this.wavesurfer.playPause();
-
-            if(this.image==="@/assets/play.png") this.image=this.pause;
+        trigger() {
+            if(!this.wavesurfer.isPlaying())
+            if(this.image==this.play) this.image=this.pause;
             else this.image = this.play;
+            this.wavesurfer.playPause();
         }
     },
     computed: {
         isPlaying() {
             if (!this.wavesurfer) return false;
-
             return this.wavesurfer.isPlaying();
         }
     }
