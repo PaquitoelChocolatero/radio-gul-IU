@@ -12,18 +12,23 @@
                     {
                         "id": 100010001,
                         "name": "test01",
-                        "file": "test01-devrandom.mp3"
+                        "file": "test01.mp3"
                     },
                     {
                         "id": 100010002,
-                        "name": "test01 test1",
-                        "file": "test01-devrandom.mp3"
+                        "name": "Lo seguimos intentando",
+                        "file": "loseguimosintentando.mp3"
+                    },
+                    {
+                        "id": 100010003,
+                        "name": "Radiotón 2019",
+                        "file": "radioton2019.mp3"
                     }
                 ]
             },
             {
                 "id": 10002,
-                "name": "Temporada 2019 test",
+                "name": "miau miau miau",
                 "episodes": [
                     {
                         "id": 100020001,
@@ -47,38 +52,44 @@
     },
     {
         "id": 3,
-        "name": "test",
-        "img": "meetuc3m.jpg",
-        "description": "Test Description"
+        "name": "Hola Mundo!",
+        "img": "holamundo.jpg",
+        "description": "Hola Mundo es el programa decano de Radio GUL. Desde el año 2010 sus presentadores nos ponen al día de las novedades de la tecnología y sus protagonistas, especialmente del software libre. No faltan las curiosidades ni las noticias que motivan y asombran y así seguir creyendo en la ciencia. No te asustes, a David a Fer y a Rober a menudo se les va, por lo que resultan imprevisibles y si llegan a seguir el guión y a ponerse serios, es que estás escuchando otro programa. "
     },
     {
         "id": 4,
-        "name": "test2",
-        "img": "meetuc3m.jpg",
-        "description": "Test Description"
+        "name": "Irene Tonight",
+        "img": "irene.jpg",
+        "description": "¿Quién dijo que los ingenieros son unos frikis que no saben relacionarse con los demás? La señorita Irene M. Morgado se tomó muy en serio acabar con este tópico y decidió venir a la radio una vez al mes para enseñarnos trucos para estar mejor con nosotros mismos y los demás. \n \n En #IreneTonight podrás aprenderlo todo sobre técnicas de coaching, inteligencia emocional, mejora personal, comunicación eficaz y relaciones sociales. Todo esto hablando de quesos, pokémons, memes, marcianos, desde un punto de vista muy práctico y pasando un rato entretenido. Con ejercicios en directo, tests, muchas intervenciones y, desde luego, esperando tus opiniones y aportaciones."
     },
     {
         "id": 5,
-        "name": "test3",
-        "img": "meetuc3m.jpg",
-        "description": "Test Description"
+        "name": "Juernes on tour",
+        "img": "juernesontour.png",
+        "description": "¡El programa con más Fuerza y Energía está en Radio GUL! Dj Strike nos hace un tour por la música que se escucha y baila a nivel mundial. La música electrónica en casi todas sus vertientes tiene cabida en su programa y últimamente nos ha sorprendido con temas diferentes. En medio de ese mar, cuenta con la colaboración de Edu quien nos trae la sección El Vuelo Underground: ritmos y sonidos tranquilos para elevarse, dejarse llevar y soñar. Y para acabar, Dj Strike nos ofrece una sesión con el mejor EDM y Trance. Todo esto para que encares el fin de semana lleno de ¡Fuerza y Energía!"
     },
     {
         "id": 6,
-        "name": "test4",
-        "img": "meetuc3m.jpg",
-        "description": "Test Description"
+        "name": "Betabeers podcast",
+        "img": "betabeers.png",
+        "description": "La comunidad Betabeers convertida en un programa de radio. ¡Eso es Betabeers Podcast! Hablamos de actualidad en el mundo del desarrollo y las startups. Pablo Rodríguez y Daniel Rojo son los conductores de este proyecto en Radio GUL. \n \n En cada programa contamos con la participación de un invitado de la comunidad que nos habla de un área tecnológica específica, de un lenguaje de desarrollo o de prácticas y técnicas para mejorar. Nuestro objetivo es compartir conocimiento y pasar un buen rato. "
     },
     {
         "id": 7,
-        "name": "test5",
-        "img": "meetuc3m.jpg",
-        "description": "Test Description"
+        "name": "El Gato de Hubble",
+        "img": "gatohubble.jpg",
+        "description": "El Gato de Hubble es el programa en el que hacemos un recorrido por la historia de la Ciencia, desde que a Newton le cayó la manzana hasta nuestros días. La sección principal la dedicamos a una disciplina concreta, en la que contamos con expertos en él area para destripar noticias de su campo aparecidas en los medios. Todo ello aliñado con un toque desenfandado y de humor, marca de la casa. \n \n La ciencia es algo difícil si se enseña mal. "
     },
     {
         "id": 8,
-        "name": "test6",
-        "img": "meetuc3m.jpg",
-        "description": "Test Description"
+        "name": "La cosa fluye",
+        "img": "iconradio.jpg",
+        "description": "La Cosa Fluye es un programa lanzado en exclusiva por Radio GUL. En este programa, un grupo de jovenes estudianes tratan de acercar a nuestros oyentes un mundo repleto de proyectos increibles, decisiones dificiles, y noticias a la par inquietantes que tronchantes. \n \n Las diferentes secciones del programa son: \n - Proyectos inexplorados. \n - Filosofía en decisiones cotidianas. \n - Piensa en analógico. \n - Las noticias más impactantes. \n \n Todo esto aliñado con la mejor compañía y las reflexiones, a menudo disparatadas, de nuestros locutores. Aún asi, no esperes un programa corriente, nuestro equipo tiende a introducir la teoria del random en todos sus guiones, así que salen unos programas en ocasiones un tanto... curiosos."
+    },
+    {
+        "id": 9,
+        "name": "Late night",
+        "img": "latenight.jpg",
+        "description": "¡Luz, Fuego, Destrucción! ¡Destruccioooón! A veces somos como niños mayores y cuando tenemos juguetes que molan no queremos parar de jugar con ellos, ya estemos que nos caigamos de sueño o implique empezar a las 00:00 y acabar a las ... En el Late Night puede pasar de todo o no pasar nada, depende del estado de hibernación de nuestra creatividad. Podemos llamarte a tu casa y si no estás, buscar el chino donde estés cenando y hacerte pasar un rato divertido bajo nuestro punto de vista. También puedes llamarnos, algo nos inventaremos para hacerte cantar o responder a cuestionarios irreverentes. Otras veces simplemente ponemos música y empezamos a hablar de cualquier cosa, desde cuáles son las peores películas hasta defender teorías alternativas de la física que rige el Universo. Y al acabar ¡¡¡¡destruccioooón!!! Esos somos nosotros a partir de las 00:00, un viernes cualquiera."
     }
 ]
