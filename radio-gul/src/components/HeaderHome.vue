@@ -48,19 +48,19 @@ export default {
   }
   .header{
     cursor: default;
-    padding-bottom:5%;
-    padding-top:5%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 100%;
   }
   .bar {
     float: right;
-    margin-top: 2%;
-    margin-right: 2%;
+    margin-top: 30px;
+    margin-right: 5px;
   }
 
   .centered{
+    padding-bottom:5%;
+    padding-top:5%;
     margin-left: 30%;
     width: 37%;
   }

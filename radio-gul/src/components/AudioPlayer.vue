@@ -39,18 +39,11 @@ export default {
                 hideScrollbar: true
             });
 
-
-
             this.wavesurfer.on('finish', function () {
                 this.image=this.play;
             });
-            this.wavesurfer.on('ready', function () {
-                this.wavesurfer.play();
-            });
             
-            
-            
-            this.wavesurfer.loadBlob('@/audio/test01-devrandom.mp3');
+            this.wavesurfer.load(require('@/audio/test01.mp3'));            
         },
         trigger() {
             if(!this.wavesurfer.isPlaying())
