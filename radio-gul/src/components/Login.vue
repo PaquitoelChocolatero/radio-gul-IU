@@ -10,12 +10,12 @@
                 <input type="text" class="user" placeholder="Usuario" required>
                 <input type="password" placeholder="Contraseña" required>
                 <br>
-                <button type='login-button' v-on:click="checkCredentials">Login</button>
+                <button type='login-button' v-on:click="checkCredentials()">Login</button>
               </form>
                 <p>
                   <br>
                     New administrator?</p>  
-                <button v-on:click="setCredentials">Register</button>
+                <button v-on:click="setCredentials()">Register</button>
         </div>
         
     </div>
@@ -25,6 +25,11 @@
 
 export default {
   name: 'login',
+
+ 
+  
+
+ 
 
   methods: {
     jump(){
@@ -54,10 +59,9 @@ export default {
 		else {
 			alert("Usuario o contraseña incorrecta");
 		}
-    }
-  },
+    },
 
-  setCredentials: function () {
+     setCredentials: function () {
       
       var values=["user", "pass"];
       var new_user=["user", "pass"];
@@ -70,10 +74,13 @@ export default {
       for(i=0; i<new_user.length; i++){
           setCookie(values[i], new_user[i], 14);
       }
+  },
+
+    
               
   }
-  
-}
+  };
+
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -92,10 +99,11 @@ function getCookie(cname) {
 
 
 function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
+  this.$cookie.set(cname, cvalue, exdays);
+  /*var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";*/
 }
 
 
