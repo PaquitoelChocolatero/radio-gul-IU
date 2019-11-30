@@ -39,8 +39,6 @@ export default {
                 hideScrollbar: true
             });
 
-
-
             this.wavesurfer.on('finish', function () {
                 this.image=this.play;
             });

@@ -25,7 +25,8 @@ export default {
             this.$router.push({
                 name: 'program',
                 params: {
-                    q: this.removeSpecialChars(this.program.name)
+                    q: this.removeSpecialChars(this.program.name),
+                    program: this.program
                 }
             })
         },
@@ -41,6 +42,7 @@ export default {
 <style scoped>
     div{
         background-color: white;
+        cursor: pointer;
     }
     .title{
         font-weight: bold;

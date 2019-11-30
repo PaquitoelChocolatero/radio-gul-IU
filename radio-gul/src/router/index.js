@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Search from '../views/Search.vue'
 import Program from '../views/Program.vue'
 import Player from '../views/Player.vue'
+import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/p=:q/:season-:episode-:name',
     name: 'player',
     component: Player
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: Admin
   }
 ]
 
