@@ -1,5 +1,6 @@
 <template>
   <div id="player">
+    <Header />
     <AudioPlayer />
     <Footer />
   </div>
@@ -8,18 +9,21 @@
 <script>
 import Footer from '../components/Footer.vue'
 import AudioPlayer from '../components/AudioPlayer.vue'
+import Header from '../components/Header.vue'
 
 export default {
   name: 'player',
   components: {
     Footer,
-    AudioPlayer
+    AudioPlayer,
+    Header
   }
 }
 </script>
 
 <style>
   html{
+    cursor: default;
     height: 100%;
   }
   #player {

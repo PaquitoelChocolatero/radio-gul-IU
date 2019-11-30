@@ -1,5 +1,6 @@
 <template>
   <div id="login">
+<<<<<<< HEAD
     <input type='checkbox' id='form-switch'>
         <form id='login-form' method='post'>
           <input type="text" placeholder="Username" required>
@@ -24,6 +25,9 @@
           <button type='submit'>Register</button>
           <label for='form-switch'>¿Ya tiene una cuenta? Inicie sesión</label>
         </form> -->
+=======
+    
+>>>>>>> 1196c93c515d0428adbdb9809bba94b2fef252f2
   </div>
 </template>
 

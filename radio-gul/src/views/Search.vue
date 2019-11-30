@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Header from '../components/Header.vue'
+import Header from '../components/HeaderHome.vue'
 import Footer from '../components/Footer.vue'
 import SearchResultList from '../components/SearchResultList.vue'
 import Vue from 'vue'
@@ -33,6 +33,7 @@ export default {
 
 <style>
   html{
+    cursor: default;
     height: 100%;
   }
   #home {

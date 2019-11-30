@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div id='right'>
-                <img src="../assets/admin.png" alt="admin" width="40" height="40">
+                <img src="../assets/admin.png" alt="admin" width="40" height="40" v-on:click="jump()">
             </div>
         </div>
         <div id='text'>
@@ -32,7 +32,14 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    methods: {
+        jump(){
+            this.$router.push({
+                name: 'login'
+            })
+        }
+    }
 }
 </script>
 
