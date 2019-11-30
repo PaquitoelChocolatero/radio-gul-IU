@@ -39,6 +39,8 @@ export default {
                 hideScrollbar: true
             });
 
+
+
             this.wavesurfer.on('finish', function () {
                 this.image=this.play;
             });
@@ -46,8 +48,9 @@ export default {
                 this.wavesurfer.play();
             });
             
-            this.wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
-            //this.wavesurfer.loadBlob('@/audio/test01-devrandom.mp3');
+            
+            
+            this.wavesurfer.loadBlob('@/audio/test01-devrandom.mp3');
         },
         trigger() {
             if(!this.wavesurfer.isPlaying())

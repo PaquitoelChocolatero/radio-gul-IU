@@ -28,7 +28,8 @@ const routes = [
   {
     path: '/p=:q/:season-:episode-:name',
     name: 'player',
-    component: Player
+    component: Player,
+    props: true
   },
   {
     path: '/login',

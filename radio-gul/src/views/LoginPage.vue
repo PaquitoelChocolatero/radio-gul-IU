@@ -16,5 +16,7 @@ export default {
 </script>
 
 <style scoped>
-
+  html{
+    cursor: default;
+  }
 </style>

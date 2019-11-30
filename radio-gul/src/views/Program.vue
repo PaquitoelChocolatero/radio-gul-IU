@@ -1,6 +1,6 @@
 <template>
   <div id="program">
-    <Header />
+    <Header v-bind:program='program' />
     <div id='central'>
       <Desc v-bind:program='program' />
       <Episodes v-bind:program='program' />
@@ -36,6 +36,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #f2f2f3;
+    height: 100%;
   }
   #central{
     display:inline;

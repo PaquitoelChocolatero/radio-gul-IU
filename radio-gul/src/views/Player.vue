@@ -20,6 +20,7 @@ export default {
 
 <style>
   html{
+    cursor: default;
     height: 100%;
   }
   #player {
