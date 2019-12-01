@@ -1,8 +1,8 @@
 <template>
   <div id="program">
     <Header v-bind:program='program' />
-    <div id='central'>
-      <Desc v-bind:program='program' />
+    <div id='central'>      
+      <Description v-bind:program='program' />
       <Episodes v-bind:program='program' />
     </div>
     <Footer />
@@ -12,7 +12,7 @@
 <script>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
-import Desc from '../components/ProgramDesc.vue'
+import Description from '../components/ProgramDesc.vue'
 import Episodes from '../components/Episodes.vue'
 
 export default {
@@ -20,7 +20,7 @@ export default {
   components: {
     Header,
     Footer,
-    Desc,
+    Description,
     Episodes
   },
   props: ['program']
