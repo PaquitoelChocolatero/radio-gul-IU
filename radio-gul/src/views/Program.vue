@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Header from '../components/Header.vue'
+import Header from '../components/HeaderProgram.vue'
 import Footer from '../components/Footer.vue'
 import Description from '../components/ProgramDesc.vue'
 import Episodes from '../components/Episodes.vue'

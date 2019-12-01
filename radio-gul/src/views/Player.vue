@@ -9,7 +9,7 @@
 <script>
 import Footer from '../components/Footer.vue'
 import AudioPlayer from '../components/AudioPlayer.vue'
-import Header from '../components/Header.vue'
+import Header from '../components/HeaderSmall.vue'
 
 export default {
   name: 'player',

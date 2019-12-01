@@ -69,7 +69,8 @@ export default {
     }
     #row{
         width: 90%;
-        margin-left: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
         margin-top: 5%;
         margin-bottom: 5%;
         background-color: white;
