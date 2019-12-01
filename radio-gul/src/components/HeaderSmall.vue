@@ -6,8 +6,8 @@
         <i class="fa fa-search"></i>
       </form>
     </div>
-    <div class="left">
-      <img src="@/assets/logo-blue.jpg" v-on:click="home()" id='logo'>
+    <div class="left" v-on:click="home()">
+      <img src="@/assets/logo-blue.jpg" id='logo'>
       <h3><strong>RADIO GUL</strong></h3>
     </div>
   </div>
@@ -47,10 +47,11 @@ export default {
   }
   .bar {
     float: right;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-right: 5px;
   }
   .left{
+    cursor: pointer;
     display:inline;
     text-align:center;
     left: 0;
@@ -115,7 +116,6 @@ export default {
     color: white;
   }
   #logo{
-    cursor: pointer;
     width: 60px;
   }
 </style>

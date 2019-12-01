@@ -34,7 +34,6 @@ export default {
                 barWidth: 3,
                 barRadius: 3,
                 cursorWidth: 1,
-                height: 200,
                 barGap: 1,
                 hideScrollbar: true
             });
@@ -63,33 +62,35 @@ export default {
 
 <style scoped>
     #play{
-        width: 30%;
+        width: 40%;
         align-item: center;
-        margin-top: 25%;
+        vertical-align: center;
     }
     #row{
+        padding-top: 1%;
+        padding-bottom: 0.5%;
         width: 90%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        float: left;
+        margin: 5% 5% 5% 5%;
         background-color: white;
         cursor: pointer;
         border-radius: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: grid;
         display: inline-grid;
-        grid-template-columns: 15% 70% 15%;
+        grid-template-columns: 10% 80% 10%;
     }
     #logo{
-        width: 60%;
-        margin-top: 10%;
-        margin-left: 3%;
+        width: 70%;
+        float: left;
         border-radius: 3px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     #space{
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
