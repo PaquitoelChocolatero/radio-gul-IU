@@ -71,7 +71,7 @@ export default {
         padding-bottom: 0.5%;
         width: 90%;
         float: left;
-        margin: 5% 5% 5% 5%;
+        margin: 3% 5% 4% 5%;
         background-color: white;
         cursor: pointer;
         border-radius: 5px;

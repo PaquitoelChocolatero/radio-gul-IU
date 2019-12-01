@@ -1,7 +1,13 @@
 <template>
   <div id="player">
     <Header />
-    <AudioPlayer />
+    <div>
+      <AudioPlayer />
+    </div>
+    <div id='bottom'>
+      <Description id='desc'/>
+      <Previous />
+    </div>
     <Footer />
   </div>
 </template>
@@ -10,13 +16,17 @@
 import Footer from '../components/Footer.vue'
 import AudioPlayer from '../components/AudioPlayer.vue'
 import Header from '../components/HeaderSmall.vue'
+import Description from '../components/AudioDesc.vue'
+import Previous from '../components/PreviousEpisodes.vue'
 
 export default {
   name: 'player',
   components: {
     Footer,
     AudioPlayer,
-    Header
+    Header,
+    Description,
+    Previous
   }
 }
 </script>
@@ -31,5 +41,13 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #f2f2f3;
+  }
+  #bottom{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  #desc{
+    float: left;
   }
 </style>

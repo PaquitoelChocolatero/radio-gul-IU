@@ -47,9 +47,9 @@ export default {
     .title{
         font-weight: bold;
         font-size: 2em; 
+        color:rgb(0, 0, 0, 0.7);
         display: left;
         float: left;
-        color:rgb(0, 0, 0, 0.7);
     }
     .des{
        
