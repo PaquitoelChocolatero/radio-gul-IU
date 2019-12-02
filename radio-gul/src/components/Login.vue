@@ -2,7 +2,7 @@
 <div class="container">
   <div class="flex-container">
       <div class="flex-header">
-        <img src="@/assets/iconradio.jpg" height="80px">
+        <img src="@/assets/logo-blue.jpg" v-on:click="home()" height="80px">
         <h3>Admin Log-In</h3>
       </div>
      <form method='post'>
@@ -28,10 +28,18 @@
       checkCredentials(){
         if (this.user == this.credentials.user){
           if (this.pass == this.credentials.pass){
-            alert("hacer el jump")
+            this.jump()
           }
         }
-      }    
+      },
+      jump(){
+        this.$router.push({
+          name: 'admin'
+        })
+      },
+      home(){
+        this.$router.push('/')
+      }
     }
   }
 
@@ -45,6 +53,10 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }  
   
+  img{
+    cursor: pointer;
+  }
+
   .flex-container{
     display: flex;
     flex-direction: column;
