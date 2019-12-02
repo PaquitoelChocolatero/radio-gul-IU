@@ -18,5 +18,8 @@ export default {
 <style scoped>
   div{
     cursor: default;
+    background-color: #f2f2f3;
+    height: 100%;
+    width: 100%;
   }
 </style>
