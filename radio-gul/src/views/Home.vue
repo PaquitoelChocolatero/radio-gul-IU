@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style>
-  html{
+  div{
     cursor: default;
     height: 100%;
   }

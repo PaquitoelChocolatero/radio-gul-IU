@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-    html{
+    div{
         cursor: default;
     }
     h2{
@@ -31,12 +31,10 @@ export default {
         color: rgb(0, 0, 0, 0.7);
     }
     #desc{
-        padding: 1% 1% 0% 1%;
-        margin-left: 1%;
+        padding: 1% 1% 1% 1%;
         margin-bottom: 3%;
         clear: both;
         text-align: left;
-        width: 70%;
         background-color: white;
         border-radius: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

@@ -4,8 +4,8 @@
     <div>
       <AudioPlayer />
     </div>
-    <div id='bottom'>
-      <Description id='desc'/>
+    <div id='info'>
+      <DescComment id='desc-comment'/>
       <Previous />
     </div>
     <Footer />
@@ -16,7 +16,7 @@
 import Footer from '../components/Footer.vue'
 import AudioPlayer from '../components/AudioPlayer.vue'
 import Header from '../components/HeaderSmall.vue'
-import Description from '../components/AudioDesc.vue'
+import DescComment from '../components/DescComment.vue'
 import Previous from '../components/PreviousEpisodes.vue'
 
 export default {
@@ -25,14 +25,14 @@ export default {
     Footer,
     AudioPlayer,
     Header,
-    Description,
+    DescComment,
     Previous
   }
 }
 </script>
 
 <style>
-  html{
+  div{
     cursor: default;
     height: 100%;
   }
@@ -42,12 +42,14 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     background-color: #f2f2f3;
   }
-  #bottom{
+  #info{
     display: flex;
     text-align: center;
     width: 100%;
   }
-  #desc{
+  #desc-comment{
     float: left;
+    width: 70%;
+    margin-left: 1%;
   }
 </style>

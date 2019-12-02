@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style>
-  html{
+  div{
     height: 100%;
   }
   #program {
