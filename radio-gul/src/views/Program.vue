@@ -1,18 +1,18 @@
 <template>
   <div id="program">
-    <Header />
-    <div id='central'>
-      <Desc />
-      <Episodes />
+    <Header v-bind:program='program' />
+    <div id='central'>      
+      <Description v-bind:program='program' />
+      <Episodes v-bind:program='program' />
     </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue'
+import Header from '../components/HeaderProgram.vue'
 import Footer from '../components/Footer.vue'
-import Desc from '../components/ProgramDesc.vue'
+import Description from '../components/ProgramDesc.vue'
 import Episodes from '../components/Episodes.vue'
 
 export default {
@@ -20,14 +20,15 @@ export default {
   components: {
     Header,
     Footer,
-    Desc,
+    Description,
     Episodes
-  }
+  },
+  props: ['program']
 }
 </script>
 
 <style>
-  html{
+  div{
     height: 100%;
   }
   #program {
@@ -35,6 +36,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #f2f2f3;
+    height: 100%;
   }
   #central{
     display:inline;

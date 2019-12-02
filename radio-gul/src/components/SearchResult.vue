@@ -25,7 +25,8 @@ export default {
             this.$router.push({
                 name: 'program',
                 params: {
-                    q: this.removeSpecialChars(this.program.name)
+                    q: this.removeSpecialChars(this.program.name),
+                    program: this.program
                 }
             })
         },
@@ -39,12 +40,16 @@ export default {
 </script>
 
 <style scoped>
+    div{
+        background-color: white;
+        cursor: pointer;
+    }
     .title{
         font-weight: bold;
         font-size: 2em; 
+        color:rgb(0, 0, 0, 0.7);
         display: left;
         float: left;
-        color:rgb(0, 0, 0, 0.7);
     }
     .des{
        
@@ -66,8 +71,8 @@ export default {
         padding-right: 2%;
     }
     .card {
-    text-indent: 5px;
-    color: #FFF;
+        text-indent: 5px;
+        color: #FFF;
     }
     .clearfix {
         overflow: auto;
@@ -93,7 +98,8 @@ export default {
         top: 0;
         bottom: 0;
         left: 0;
-        right: 0;background: rgb(0, 0, 0, 0.7);
+        right: 0;
+        background: rgb(0, 0, 0, 0.7);
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
