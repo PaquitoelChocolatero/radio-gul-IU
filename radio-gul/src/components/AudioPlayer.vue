@@ -30,7 +30,7 @@ export default {
             this.wavesurfer = WaveSurfer.create({
                 container: "#container",
                 waveColor: '#39A7DA',
-                progressColor: '#5c6bc0',
+                progressColor: '#9884b8',
                 barWidth: 3,
                 barRadius: 3,
                 cursorWidth: 1,
@@ -79,6 +79,11 @@ export default {
         display: grid;
         display: inline-grid;
         grid-template-columns: 10% 80% 10%;
+    }
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #logo{
         width: 70%;
