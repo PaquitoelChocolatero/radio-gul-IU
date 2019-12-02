@@ -38,13 +38,14 @@
 </script>
 
 <style scoped>
-  /* .container{
-    margin: 30% 20% 30% 20%;
-  } */
+   .container{
+      height: 30%;
+      width: 30%;
+       border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }  
   
   .flex-container{
-    margin-top: 10%;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +63,7 @@
   }
 
   .flex-header h3 {
-    padding-top: 3%;
+    padding-top: 6%;
     margin-left: 3%;
   }
 
@@ -75,5 +76,12 @@
   .form-item{
     width: 50%;
     margin: 1%;
+  }
+
+  button{
+    height: 28%;
+    background-color: #9884b8;
+    color: white;
+    font-size: 1.5em;
   }
 </style>
