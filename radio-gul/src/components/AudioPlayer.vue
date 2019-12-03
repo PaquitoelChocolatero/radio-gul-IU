@@ -30,7 +30,7 @@ export default {
             this.wavesurfer = WaveSurfer.create({
                 container: "#container",
                 waveColor: '#39A7DA',
-                progressColor: '#9884b8',
+                progressColor: '#5c6bc0',
                 barWidth: 3,
                 barRadius: 3,
                 cursorWidth: 1,
@@ -38,11 +38,10 @@ export default {
                 hideScrollbar: true
             });
 
-            this.wavesurfer.on('finish', function () {
-                this.image=this.play;
-            });
-            
-            this.wavesurfer.load("require(`@/audio/${this.episode.file}`)");            
+            // this.wavesurfer.on('finish', function () {
+            //     this.image=this.play;
+            // });
+            this.wavesurfer.load(require(`@/audio/${this.episode.file}`));
         },
         trigger() {
             if(!this.wavesurfer.isPlaying())
@@ -51,12 +50,12 @@ export default {
             this.wavesurfer.playPause();
         }
     },
-    computed: {
-        isPlaying() {
-            if (!this.wavesurfer) return false;
-            return this.wavesurfer.isPlaying();
-        }
-    },
+    // computed: {
+    //     isPlaying() {
+    //         if (!this.wavesurfer) return false;
+    //         return this.wavesurfer.isPlaying();
+    //     }
+    // },
     props: ['episode']
 }
 </script>
