@@ -2,11 +2,10 @@
   <div id="comments">
     <p id='title'>Comments</p>
     <div id='input'>
-      <input type="text" placeholder="Type a comment...">
+      <input type="text" placeholder="Type a comment..." v-on:keyup.enter="add()" ref='commentInput'>
     </div>
-    <div id='comment'>
-      <p id='user'> </p>
-      <p id='text'> Este podcast es una mierda </p>
+    <div v-bind:key='comment.key' v-for='comment in episode.comments' id="comment">
+      <p id='text'>{{ comment }}</p>
     </div>
   </div>
 </template>
@@ -14,7 +13,14 @@
 <script>
 
 export default {
-  name: 'comments'
+  name: 'comments',
+  props: ['episode'],
+  methods: {
+    add(){
+      this.episode.comments.unshift(this.$refs.commentInput.value);
+      this.$refs.commentInput.value='';
+    }
+  }
 }
 </script>
 

@@ -2,8 +2,8 @@
     <div id="desc">
         <h2>{{ episode.name }}</h2>
         <p>{{ episode.description }}</p>
-        <div v-bind:key='hashtag.id' v-for='hashtag in episode.hashtags' id="hashtags">
-            <p id='hashtag'>{{ hashtag.hashtag }}</p>
+        <div v-bind:key='hashtag.key' v-for='hashtag in episode.hashtags' id="hashtags">
+            <p id='hashtag'>{{ hashtag }}</p>
         </div>
     </div>
 </template>
