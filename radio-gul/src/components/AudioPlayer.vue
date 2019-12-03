@@ -42,7 +42,7 @@ export default {
                 this.image=this.play;
             });
             
-            this.wavesurfer.load(require('@/audio/test01.mp3'));            
+            this.wavesurfer.load("require(`@/audio/${this.episode.file}`)");            
         },
         trigger() {
             if(!this.wavesurfer.isPlaying())
@@ -56,7 +56,8 @@ export default {
             if (!this.wavesurfer) return false;
             return this.wavesurfer.isPlaying();
         }
-    }
+    },
+    props: ['episode']
 }
 </script>
 

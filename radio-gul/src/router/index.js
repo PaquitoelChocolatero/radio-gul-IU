@@ -26,7 +26,7 @@ const routes = [
     props: true
   },
   {
-    path: '/p=:q/:season-:episode-:name',
+    path: '/p=:q/:name',
     name: 'player',
     component: Player,
     props: true

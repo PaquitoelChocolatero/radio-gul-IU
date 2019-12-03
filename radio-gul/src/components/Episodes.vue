@@ -6,7 +6,7 @@
           <badger-accordion-item>
             <template slot="header">{{ season.name }}</template>
             <template v-for='episode in season.episodes' slot="content">
-              <div v-bind:key='episode.id' v-on:click='jump()'>
+              <div v-bind:key='episode.id' v-on:click='element(episode); jump()'>
                   <p>{{ episode.name }}</p>
               </div>
             </template>
@@ -32,11 +32,13 @@ export default {
         name: 'player',
         params: {
           q: this.$route.params.q,
-          season: "2019",
-          episode: "1",
-          name: "test01"
+          name: this.episode.name,
+          episode: this.episode
         }
       })
+    },
+    element(episode){
+      this.episode=episode;
     }
   },
   props: ['program']

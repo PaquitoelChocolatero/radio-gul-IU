@@ -2,10 +2,10 @@
   <div id="player">
     <Header />
     <div>
-      <AudioPlayer />
+      <AudioPlayer v-bind:episode='episode'/>
     </div>
     <div id='info'>
-      <DescComment id='desc-comment'/>
+      <DescComment id='desc-comment' v-bind:episode='episode'/>
       <Previous />
     </div>
     <Footer />
@@ -27,7 +27,8 @@ export default {
     Header,
     DescComment,
     Previous
-  }
+  },
+  props: ['episode']
 }
 </script>
 

@@ -15,12 +15,26 @@
                         "file": "test01.mp3",
                         "description": "Bienvenidos al nuevo programa de Radio GUL, en el programa de hoy hablamos sobre el nuevo Mi Mix 3, el aumento en ventas de procesadores AMD, la denuncia de Italia a Samsung y Apple por obsolescencia programada y la vuelta de Linus al desarrollo del kernel de Linux. Esperamos que os guste.",
                         "hashtags": [
-                            "noticias",
-                            "tecnología",
-                            "internet",
-                            "internet",
-                            "móviles",
-                            "software"
+                            {
+                                "id": 1000100010001,
+                                "hashtag": "noticias"
+                            },
+                            {
+                                "id": 1000100010002,
+                                "hashtag": "tecnología"
+                            },
+                            {
+                                "id": 1000100010003,
+                                "hashtag": "internet"
+                            },
+                            {
+                                "id": 1000100010004,
+                                "hashtag": "móviles"
+                            },
+                            {
+                                "id": 1000100010004,
+                                "hashtag": "software"
+                            }
                         ]
                     },
                     {

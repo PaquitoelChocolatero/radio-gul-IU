@@ -1,7 +1,7 @@
 <template>
   <div id="col">
-    <AudioDesc />
-    <Comments />
+    <AudioDesc v-bind:episode='episode'/>
+    <Comments v-bind:episode='episode'/>
   </div>
 </template>
 
@@ -12,9 +12,10 @@ import Comments from "./Comments.vue"
 export default {
   name: 'DescComment',
   components: {
-      AudioDesc,
-      Comments
-  }
+    AudioDesc,
+    Comments
+  },
+  props: ['episode']
 }
 </script>
 

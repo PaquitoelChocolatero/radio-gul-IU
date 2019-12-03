@@ -2,7 +2,7 @@
   <div class="header" :style="{backgroundImage: `url(${bg})`}">
     <div class="bar">
       <form action="">
-        <input type="search" v-on:keyup.enter="submit()"  ref='searchInput'>
+        <input type="search" v-on:keyup.enter="submit()" ref='searchInput'>
         <i class="fa fa-search"></i>
       </form>
     </div>

@@ -1,15 +1,9 @@
 <template>
     <div id="desc">
-        <h2>Titulo</h2>
-        <p>
-            What is this, 90's Conan? You know my name, that's disarming. What are you looking at, mother fucker! I love morty and i hope morty loves me. I want to wrap my arms around him and feel him deep inside me.
-            
-            I can finally go on that trip I've been talking about. I don't get it, and I don't need to. Prepare to be emancipated from your own inferior genes! I know the two of you are very different from each other in a lot of ways, but you have to understand that as far as Grandpa's concerned, you're both pieces of shit! Yeah. I can prove it mathematically. Actually, l-l-let me grab my whiteboard. This has been a long time coming, anyways.
-        </p>
-        <div id="hashtags">
-            <p id='hashtag'>test1</p>
-            <p id='hashtag'>test2</p>
-            <p id='hashtag'>test3</p>
+        <h2>{{ episode.name }}</h2>
+        <p>{{ episode.description }}</p>
+        <div v-bind:key='hashtag.id' v-for='hashtag in episode.hashtags' id="hashtags">
+            <p id='hashtag'>{{ hashtag.hashtag }}</p>
         </div>
     </div>
 </template>
@@ -17,7 +11,8 @@
 <script>
 
 export default {
-  name: 'AudioDesc'
+  name: 'AudioDesc',
+  props: ['episode']
 }
 </script>
 
