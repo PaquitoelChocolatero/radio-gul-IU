@@ -1,9 +1,7 @@
 <template>
   <div id="loginPage" class="full-size">
       <Login class ="login-box"/>
-      <br>
-      <div class="fill">
-        </div>
+      <div class="fill"></div>
   </div>
 </template>
 
@@ -26,6 +24,7 @@ export default {
 
   .login-box{
     margin-top: 10%;
+    margin-bottom: 20%;
     padding-top: 3%;
     padding-bottom: 5%;
     height: 40%;
@@ -34,7 +33,7 @@ export default {
   }
 
   .fill{
-    height: 500px;
+    height: 1px;
     background-color: #f2f2f3;
   }
 </style>
