@@ -22,7 +22,7 @@ export default {
     }
     h2{
         font-weight: bold;
-        font-size: 2em; 
+        font-size: 2em;
         color: rgb(0, 0, 0, 0.7);
     }
     #title{
