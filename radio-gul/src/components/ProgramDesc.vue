@@ -64,8 +64,8 @@ export default {
     width: 70%;
     margin-left: 26%;
     float: left;
-    margin-top: -15%;
-    text-align: center;
+    margin-top: -20%;
+    text-align: justify;
     font-size: 100%;
     color: black;
   }

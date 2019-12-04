@@ -4,6 +4,7 @@
       <img :src="require(`@/assets/${program.img}`)" id='logo'>
       <h1><strong>{{ program.name }}</strong></h1>
     </div>
+    <h2>Volver a RadioGUL</h2>
   </div>
 </template>
 
@@ -42,5 +43,12 @@ export default {
   }
   #logo{
     width: 25%;
+  }
+  h2 {
+    float: left;
+    margin-left: 1%;
+    margin-top: 3%;
+    color: white;
+    font-size: 1.2em;
   }
 </style>
