@@ -8,8 +8,10 @@
       <p>{{ program.description }}</p>
     </div>
     <h2>Tags</h2>
-    <div v-bind:key='hashtag.key' v-for='hashtag in program.hashtags' id="hashtags">
-        <p id='hashtag'>{{ hashtag }}</p>
+    <div class = "tags">
+      <div v-bind:key='hashtag.key' v-for='hashtag in program.hashtags' id="hashtags">
+          <p id='hashtag'>{{ hashtag }}</p>
+      </div>
     </div>
     <h3>Participantes</h3>
   </div>
@@ -55,11 +57,31 @@ export default {
   .right {
     width: 70%;
     margin-left: 26%;
-  }
-  p {
     float: left;
-    margin-top: -23%;
+    margin-top: -15%;
+    text-align: center;
     font-size: 100%;
     color: black;
+  }
+  .tags {
+    margin-left: 1%;
+    margin-bottom: 2%;
+  }
+  #hashtags {
+    clear: both;
+    display: inline;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #hashtag {
+    padding: 0% 1% 0% 1%;
+    float: left;
+    background-color: #9884b8;
+    border-radius: 10px;
+    color: white;
+    margin-right: 1%;
+    position: relative;
   }
 </style>
