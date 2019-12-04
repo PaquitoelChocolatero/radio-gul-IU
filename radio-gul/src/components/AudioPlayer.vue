@@ -35,8 +35,10 @@ export default {
                 barRadius: 3,
                 cursorWidth: 1,
                 barGap: 1,
-                hideScrollbar: true
-            });
+                hideScrollbar: true,
+                fillParent: false,  
+                minPxPerSec: 6.7
+           });
 
             // this.wavesurfer.on('finish', function () {
             //     this.image=this.play;
