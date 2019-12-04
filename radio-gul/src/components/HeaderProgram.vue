@@ -4,7 +4,7 @@
       <img :src="require(`@/assets/${program.img}`)" id='logo'>
       <h1><strong>{{ program.name }}</strong></h1>
     </div>
-    <h2>Volver a RadioGUL</h2>
+    <h2 v-on:click="home()">Volver a RadioGUL</h2>
   </div>
 </template>
 
@@ -18,6 +18,9 @@ export default {
       return {
           bg
     }
+  },
+  home(){
+    this.$router.push('/')
   }
 }
 </script>
