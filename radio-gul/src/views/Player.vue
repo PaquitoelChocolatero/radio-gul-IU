@@ -28,7 +28,11 @@ export default {
     DescComment,
     Previous
   },
-  props: ['episode']
+    data(){
+      return{
+        episode: JSON.parse(localStorage.getItem('episode'))
+      }
+    }
 }
 </script>
 

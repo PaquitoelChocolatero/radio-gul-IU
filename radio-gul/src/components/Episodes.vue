@@ -35,7 +35,8 @@ export default {
           name: this.episode.name,
           episode: this.episode
         }
-      })
+      }),
+      localStorage.setItem('episode', JSON.stringify(this.episode))
     },
     element(episode){
       this.episode=episode;

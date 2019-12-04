@@ -23,7 +23,11 @@ export default {
     Description,
     Episodes
   },
-  props: ['program']
+  data(){
+    return{
+      program: JSON.parse(localStorage.getItem('programa'))
+    }
+  }
 }
 </script>
 

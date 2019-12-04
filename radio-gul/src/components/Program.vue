@@ -17,7 +17,8 @@ export default {
                     q: this.removeSpecialChars(this.program.name),
                     program: this.program
                 }
-            })
+            }),
+            localStorage.setItem('programa', JSON.stringify(this.program))
         },
         removeSpecialChars(str) {
             return str.replace(/(?!\w|\s)./g, '')
