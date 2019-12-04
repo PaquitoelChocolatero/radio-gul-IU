@@ -14,12 +14,12 @@
       </div>
     </div>
     <h3>Participantes</h3>
-    <!-- <div class = "participants">
-      <div v-bind:key='person.key' v-for='person in program.people' id="people">
-        <img id = "pavatar" v-bind:src="require(`@/assets/${person.avatar}`)">
-        <p id = "fullname">{{ person.fname }}</p>
+    <div class = "participants">
+      <div v-bind:key='person.id' v-for='person in program.people' id="people">
+        <img id="pavatar" v-bind:src="require(`@/assets/${person.avatar}`)">
+        <p id="fullname">{{ person.fname }}</p>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
