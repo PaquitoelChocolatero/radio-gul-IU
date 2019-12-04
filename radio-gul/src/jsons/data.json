@@ -8,6 +8,28 @@
             "noticias",
             "tecnología"
         ],
+        "people": [
+          {
+            "avatar": "user.png" ,
+            "fname": "Juan Francisco García"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": "Alejandro de la Cruz"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": "Guillermo Bautista-Abad"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": "Juan Banga Pardo"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": "José Ramón Fernández"
+          }
+        ],
         "seasons": [
             {
                 "id": 10001,
