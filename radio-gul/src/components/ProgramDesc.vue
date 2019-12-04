@@ -14,6 +14,14 @@
       </div>
     </div>
     <h3>Participantes</h3>
+    <div class = "people">
+      <div v-bind:key='avatar.key' v-for='avatar in program.people' id="avatars">
+          <img src={{ avatar }} id='avatar'>
+      </div>
+      <div v-bind:key='fname.key' v-for='fname in program.people' id="names">
+            <p id='fname'>{{ fname }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
