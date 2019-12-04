@@ -4,6 +4,10 @@
         "name": "/dev/random",
         "img": "devrandom.jpg",
         "description": "Somos /dev/random, el nuevo programa de Radio GUL de la Universidad Carlos III de Madrid, nos gusta hablar de tecnología y las últimas noticias. \n \n Si tenéis alguna noticia o tema que queréis que tratemos dejádnoslo en los comentarios e intentaremos tenerlo en cuenta para el siguiente podcast. ",
+        "hashtags": [
+            "noticias",
+            "tecnología"
+        ],
         "seasons": [
             {
                 "id": 10001,
