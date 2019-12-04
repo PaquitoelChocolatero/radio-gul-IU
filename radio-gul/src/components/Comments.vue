@@ -1,9 +1,14 @@
 <template>
   <div id="comments">
     <p id='title'>Comments</p>
-    <div id='input'>
-      <input type="text" placeholder="Type a comment..." v-on:keyup.enter="add()" ref='commentInput'>
+    <div id='input' class="input">
+      <textarea type="text" placeholder="Type a comment..." ref='commentInput'></textarea>
+      <br>
+      <button class="cancel" v-on:click="cancel()">Cancelar</button>
+      <button class="publish" v-on:click="add()">Publicar</button>
+
     </div>
+  
     <div v-bind:key='comment.key' v-for='comment in episode.comments' id="comment">
       <p id='text'>{{ comment }}</p>
     </div>
@@ -19,6 +24,9 @@ export default {
     add(){
       this.episode.comments.unshift(this.$refs.commentInput.value);
       this.$refs.commentInput.value='';
+    },
+    cancel(){
+      this.$refs.commentInput.value='';
     }
   }
 }
@@ -29,10 +37,38 @@ export default {
     cursor: default;
     text-align: left;
   }
-  input{
+  /*input{
     margin-top: 1%;
     margin-left: 1%;
+    margin-right: 1%;
     padding: 1% 1% 1% 1%;
+    width: 77%;
+  }*/
+  .publish{
+    font-weight: bold;
+    width:10%;
+    height: 50px;
+    background-color: #39A7DA;
+    color: white;
+    display: right;
+    margin-left: 1%;
+  }
+  .cancel{
+    font-weight: bold;
+    width:10%;
+    height: 50px;
+    background-color: white;
+    color: #666666;
+    display: right;
+    margin-left: 77%;
+    border: #FFFFFF;
+  }
+  textarea{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1% 1% 1% 1%;
+    width: 97%;
   }
   #title{
     font-weight: bold;
