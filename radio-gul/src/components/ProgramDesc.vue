@@ -27,24 +27,37 @@ export default {
     margin-left: 1%;
     margin-top: 1%;
     border-radius: 5px;
-    width: 49%;
-    margin-bottom: 2%;
+    width: 47%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .h1 .h2 .h3 {
+  h1, h2, h3 {
+    margin-top: 1%;
     text-align: left;
     margin-left: 1%;
     font-size: 1.2em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
     color: black;
+    width: 98%;
+  }
+  .left {
+    width: 25%;
   }
   #program-img {
-    width: 10%;
+    width: 80%;
     padding-top: 5%;
+    padding-bottom: 5%;
   }
-  .p {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 110%;
+  .right {
+    width: 75%;
+    margin-left: 26%;
+  }
+  p {
+    float: left;
+    margin-top: -25%;
+    font-size: 100%;
     color: black;
   }
 </style>
