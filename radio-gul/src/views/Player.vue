@@ -28,11 +28,11 @@ export default {
     DescComment,
     Previous
   },
-    data(){
-      return{
-        episode: JSON.parse(localStorage.getItem('episode'))
-      }
+  data(){
+    return{
+      episode: JSON.parse(localStorage.getItem('episode'))
     }
+  }
 }
 </script>
 

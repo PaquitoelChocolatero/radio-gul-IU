@@ -2,7 +2,7 @@
   <div id="home">
     <Header />
     <div id='central'>
-      <SearchResultList />
+      <SearchResultList v-bind:search='search'/>
       <twitter id='twitter'>
         <div slot="loading">loading ...</div>
         <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='2' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
@@ -27,6 +27,11 @@ export default {
     Header,
     Footer,
     SearchResultList
+  },
+  data(){
+    return{
+      search: localStorage.getItem('search')
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div id='list'>
-        <p id='title'>Results for '{{ this.$route.params.q }}'</p>
+        <p id='title'>Results for '{{ search }}'</p>
         <div id='results'>
             <SearchResult v-bind:key='program.id' v-for='program in matches' v-bind:program="program" id='result'/>
         </div>
@@ -16,6 +16,7 @@ export default {
     components: {
         SearchResult
     },
+    props: ['search'],
     data(){
         return{
             programs: json
@@ -24,7 +25,7 @@ export default {
     computed: {
         matches() {
             let matches = this.programs.filter((program) => {
-                return program.name.toLowerCase().includes(this.$route.params.q.toLowerCase());
+                return program.name.toLowerCase().includes(this.search.toLowerCase());
             })
             return matches;
         }
