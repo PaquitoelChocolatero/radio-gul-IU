@@ -14,13 +14,23 @@ import bg from '../assets/bg.jpg'
 export default {
     name: 'HeaderHome',
     props: ['program'],
+    methods: {
+      submit(){
+        this.$router.push({
+          name: 'search',
+          params: {
+            q: this.$refs.searchInput.value
+          }
+        })
+      },
+      home(){
+        this.$router.push('/')
+      }
+    },
     data() {
       return {
           bg
     }
-  },
-  home(){
-    this.$router.push('/')
   }
 }
 </script>
