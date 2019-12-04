@@ -65,8 +65,10 @@ export default {
   background-color: white;
   width: 47%;
   margin-left: 51%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   border-radius: 5px;
+  font-size: 1.2em;
+  color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -78,11 +80,11 @@ export default {
 
 .badger-accordion__panel.-ba-is-hidden {
   max-height:0 !important;
-  visibility:hidden
+  visibility:hidden;
 }
 
 .badger-accordion--initalised .badger-accordion__panel {
-  transition:max-height ease-in-out .2s
+  transition:max-height ease-in-out .2s;
 }
 
 </style>
