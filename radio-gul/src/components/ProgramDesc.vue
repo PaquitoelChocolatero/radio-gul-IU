@@ -5,10 +5,12 @@
       <img :src="require(`@/assets/${program.img}`)" id='program-img'>
     </div>
     <div class = "right">
-      <p>Blablablablabla</p>
+      <p>{{ program.description }}</p>
     </div>
     <h2>Tags</h2>
-
+    <div v-bind:key='hashtag.key' v-for='hashtag in program.hashtags' id="hashtags">
+        <p id='hashtag'>{{ hashtag }}</p>
+    </div>
     <h3>Participantes</h3>
   </div>
 </template>
@@ -51,12 +53,12 @@ export default {
     padding-bottom: 5%;
   }
   .right {
-    width: 75%;
+    width: 70%;
     margin-left: 26%;
   }
   p {
     float: left;
-    margin-top: -25%;
+    margin-top: -23%;
     font-size: 100%;
     color: black;
   }
