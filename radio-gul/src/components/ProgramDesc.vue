@@ -14,10 +14,12 @@
       </div>
     </div>
     <h3>Participantes</h3>
-    <div class = "participants">
-      <div v-bind:key='person.id' v-for='person in program.people' id="people">
-        <img id="pavatar" v-bind:src="require(`@/assets/${person.avatar}`)">
-        <p id="fullname">{{ person.fname }}</p>
+    <div class="grid-container">
+      <div class="grid-item" v-bind:key='person.id' v-for='person in program.people' id="people">
+          <div class="grid-image" title="User online">
+              <img id="pavatar" v-bind:src="require(`@/assets/${person.avatar}`)" width="48" height="48">
+          </div>
+          <p id="fullname">{{ person.fname }}</p>
       </div>
     </div>
   </div>
@@ -89,5 +91,23 @@ export default {
     color: white;
     margin-right: 1%;
     position: relative;
+  }
+
+  /* Create a grid to show the users */
+  .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 3%;
+  }
+
+  .grid-image {
+      float: left;
+  }
+
+  #fullname {
+      margin-left: 3%;
+      float: left;
+      text-align: left;
+      margin-top: 5%;
   }
 </style>
