@@ -68,14 +68,14 @@
 
 
             {
-                "name": "miau miau miau",
+                "name": "Temporada 2",
                 "episodes": [
                     {
-                        "name": "test01 test2",
+                        "name": "test2",
                         "file": "test01-devrandom.mp3"
                     },
                     {
-                        "name": "test01 test3",
+                        "name": "test3",
                         "file": "test01-devrandom.mp3"
                     }
                 ]
@@ -87,21 +87,211 @@
     {
         "name": "MeetUC3M",
         "img": "meetuc3m.jpg",
-        "description": "Bienvenidos a MeetUC3M, de RadioGUL \n \n En este podcast hablaremos con distintos grupos de la Universidad Carlos III de Madrid como asociaciones o grupos de investigación. \n \n Si queréis que traigamos a alguien en concreto dejadlo en los comentarios y haremos todo lo posible."
+        "description": "Bienvenidos a MeetUC3M, de RadioGUL \n \n En este podcast hablaremos con distintos grupos de la Universidad Carlos III de Madrid como asociaciones o grupos de investigación. \n \n Si queréis que traigamos a alguien en concreto dejadlo en los comentarios y haremos todo lo posible.",
+        "hashtags": [
+            "sociedad",
+            "universidad"
+        ],
+        "people": [
+          {
+            "avatar": "user.png" ,
+            "fname": "Alejandro de la Cruz"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": "Juan Banga Pardo"
+          }
+        ],
+        "seasons": [
+            {
+                "name": "Temporada 2019",
+                "episodes": [
+
+                    {
+                        "name": "UC3Music",
+                        "file": "test01.mp3",
+                        "description": "¡Bienvenidos al nuevo programa de RadioGUL, MeetUC3M! \n \n En este podcast hablaremos con distintos grupos de la Universidad Carlos III de Madrid como asociaciones o grupos de investigación. \n En el primer programa tenemos el placer de contar con los chicos de UC3Music. \n \n Si queréis que traigamos a alguien en concreto dejadlo en los comentarios y haremos todo lo posible. \n \n Esperamos que os guste",
+                        "hashtags": [
+                            "música",
+                            "openhardware",
+                            "uc3m",
+                            "uc3music",
+                            "asociaciones"
+                        ],
+                        "comments": [
+                            "Hola, esto es un test",
+                            "Pero bueno, si funciona",
+                            "Que chopecha"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
 
 
     {
         "name": "Hola Mundo!",
         "img": "holamundo.jpg",
-        "description": "Hola Mundo es el programa decano de Radio GUL. Desde el año 2010 sus presentadores nos ponen al día de las novedades de la tecnología y sus protagonistas, especialmente del software libre. No faltan las curiosidades ni las noticias que motivan y asombran y así seguir creyendo en la ciencia. No te asustes, a David a Fer y a Rober a menudo se les va, por lo que resultan imprevisibles y si llegan a seguir el guión y a ponerse serios, es que estás escuchando otro programa. "
+        "description": "Hola Mundo es el programa decano de Radio GUL. Desde el año 2010 sus presentadores nos ponen al día de las novedades de la tecnología y sus protagonistas, especialmente del software libre. No faltan las curiosidades ni las noticias que motivan y asombran y así seguir creyendo en la ciencia. No te asustes, a David a Fer y a Rober a menudo se les va, por lo que resultan imprevisibles y si llegan a seguir el guión y a ponerse serios, es que estás escuchando otro programa. ",
+        "hashtags": [
+            "radio",
+            "conversación"
+        ],
+        "people": [
+          {
+            "avatar": "user.png" ,
+            "fname": "David Muñoz"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": "Fernando Cerezal"
+          },
+          {
+            "avatar": "user.png" ,
+            "fname": " Roberto Muñoz"
+          }
+        ],
+        "seasons": [
+            {
+                "name": "2015/2016 && 2016/2017",
+                "episodes": [
+
+                    {
+                        "name": "Hola Mundo #057",
+                        "file": "test01.mp3",
+                        "description": "Programa Hola Mundo #057",
+                        "hashtags": [
+                            "test01",
+                            "test02",
+                            "test03",
+                            "test04",
+                            "test05"
+                        ],
+                        "comments": [
+                            "Comentario01",
+                            "Comentario02",
+                            "Comentario03"
+                        ]
+                    },
+
+                    {
+                        "name": "Hola Mundo #056",
+                        "file": "test01.mp3",
+                        "description": "Programa Hola Mundo #056",
+                        "hashtags": [
+                            "test01",
+                            "test02",
+                            "test03",
+                            "test04",
+                            "test05"
+                        ],
+                        "comments": [
+                            "Comentario01",
+                            "Comentario02",
+                            "Comentario03"
+                        ]
+                    },
+
+                    {
+                        "name": "Hola Mundo #055",
+                        "file": "test01.mp3",
+                        "description": "Programa Hola Mundo #055",
+                        "hashtags": [
+                            "test01",
+                            "test02",
+                            "test03",
+                            "test04",
+                            "test05"
+                        ],
+                        "comments": [
+                            "Comentario01",
+                            "Comentario02",
+                            "Comentario03"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
 
 
     {
         "name": "Irene Tonight",
         "img": "irene.jpg",
-        "description": "¿Quién dijo que los ingenieros son unos frikis que no saben relacionarse con los demás? La señorita Irene M. Morgado se tomó muy en serio acabar con este tópico y decidió venir a la radio una vez al mes para enseñarnos trucos para estar mejor con nosotros mismos y los demás. \n \n En #IreneTonight podrás aprenderlo todo sobre técnicas de coaching, inteligencia emocional, mejora personal, comunicación eficaz y relaciones sociales. Todo esto hablando de quesos, pokémons, memes, marcianos, desde un punto de vista muy práctico y pasando un rato entretenido. Con ejercicios en directo, tests, muchas intervenciones y, desde luego, esperando tus opiniones y aportaciones."
+        "description": "¿Quién dijo que los ingenieros son unos frikis que no saben relacionarse con los demás? La señorita Irene M. Morgado se tomó muy en serio acabar con este tópico y decidió venir a la radio una vez al mes para enseñarnos trucos para estar mejor con nosotros mismos y los demás. \n \n En #IreneTonight podrás aprenderlo todo sobre técnicas de coaching, inteligencia emocional, mejora personal, comunicación eficaz y relaciones sociales. Todo esto hablando de quesos, pokémons, memes, marcianos, desde un punto de vista muy práctico y pasando un rato entretenido. Con ejercicios en directo, tests, muchas intervenciones y, desde luego, esperando tus opiniones y aportaciones.",
+        "hashtags": [
+            "radio",
+            "coach",
+            "lifestyle"
+        ],
+        "people": [
+          {
+            "avatar": "user.png" ,
+            "fname": "Irene Morgado"
+          }
+        ],
+        "seasons": [
+            {
+                "name": "2014/2015 && 2015/2016",
+                "episodes": [
+
+                    {
+                        "name": "Irene Tonight #017",
+                        "file": "test01.mp3",
+                        "description": "Programa Irene Tonight #017",
+                        "hashtags": [
+                            "test01",
+                            "test02",
+                            "test03",
+                            "test04",
+                            "test05"
+                        ],
+                        "comments": [
+                            "Comentario01",
+                            "Comentario02",
+                            "Comentario03"
+                        ]
+                    },
+
+                    {
+                        "name": "Irene Tonight #016",
+                        "file": "test01.mp3",
+                        "description": "Programa Irene Tonight #016",
+                        "hashtags": [
+                            "test01",
+                            "test02",
+                            "test03",
+                            "test04",
+                            "test05"
+                        ],
+                        "comments": [
+                            "Comentario01",
+                            "Comentario02",
+                            "Comentario03"
+                        ]
+                    },
+
+                    {
+                        "name": "Irene Tonight #015",
+                        "file": "test01.mp3",
+                        "description": "Programa Irene Tonight #015",
+                        "hashtags": [
+                            "test01",
+                            "test02",
+                            "test03",
+                            "test04",
+                            "test05"
+                        ],
+                        "comments": [
+                            "Comentario01",
+                            "Comentario02",
+                            "Comentario03"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
 
 
