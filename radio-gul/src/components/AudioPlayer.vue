@@ -36,7 +36,7 @@ export default {
                 cursorWidth: 1,
                 barGap: 1,
                 hideScrollbar: true,
-                fillParent: false,  
+                fillParent: false,
                 minPxPerSec: 6.7
            });
 
@@ -46,10 +46,13 @@ export default {
             this.wavesurfer.load(require(`@/audio/${this.episode.file}`));
         },
         trigger() {
-            if(!this.wavesurfer.isPlaying())
-            if(this.image==this.play) this.image=this.pause;
-            else this.image = this.play;
-            this.wavesurfer.playPause();
+            if(!this.wavesurfer.isPlaying()) {
+              this.image = this.pause;
+              this.wavesurfer.playPause();
+            } else {
+              this.image = this.play;
+              this.wavesurfer.playPause();
+            }
         }
     },
     // computed: {

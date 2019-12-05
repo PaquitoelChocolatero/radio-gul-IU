@@ -110,7 +110,4 @@ export default {
     width: 98%;
     background-color: #8ac3de;
   }
-  #comment:hover {
-    background-color: #9884b8;
-  }
 </style>
