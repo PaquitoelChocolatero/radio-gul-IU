@@ -5,7 +5,7 @@
       <ProgramList />
       <twitter id='twitter'>
         <div slot="loading">loading ...</div>
-        <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='2' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
+        <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='20' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
       </twitter>
     </div>
     <Footer />
@@ -45,6 +45,10 @@ export default {
   #central{
     display:inline;
     text-align:center;
+  }
+  #twitter{
+    height: 1000px;
+    overflow: auto;
   }
   /* If on mobile */
   @media (max-width: 768px) {
