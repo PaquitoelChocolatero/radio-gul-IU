@@ -37,13 +37,13 @@ export default {
     #list{
         float: left;
         width: 76%;
-        height: 100%;
+        /* height: 100%; */
         margin-top: 50px;
         margin-left: 1%;
     }
     #results{
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
     }
     #result{
         margin-bottom: 2%;
