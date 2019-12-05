@@ -9,9 +9,9 @@
         <input class="form-item" type="text" placeholder="Usuario" v-model="user" required>
         <input class="form-item" type="password" placeholder="Contraseña" v-model="pass" required>
         <button class="form-item" type='login-button' v-on:click="checkCredentials()">Login</button>
-      </form>               
+      </form>
   </div>
-</div>        
+</div>
 </template>
 
 <script>
@@ -42,8 +42,8 @@
     width: 30%;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }  
-  
+  }
+
   img{
     cursor: pointer;
   }
@@ -59,7 +59,7 @@
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .flex-header img {
     flex-grow:0;
     flex-shrink:0;
@@ -83,8 +83,18 @@
 
   button{
     height: 28%;
-    background-color: #9884b8;
+    background-color: #39a7da;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    border-radius: 3px;
+    overflow: hidden;
+    outline: none;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border: none;
+  }
+
+  button:hover{
+    background-color: #9884b8;
   }
 </style>
