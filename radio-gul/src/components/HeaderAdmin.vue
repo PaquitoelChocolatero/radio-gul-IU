@@ -27,7 +27,7 @@ export default {
   }
   .header{
     cursor: default;
-    background-color: #39A7DA;
+    background-color: #666666;
     width: 100%;
     height: 70px;
   }

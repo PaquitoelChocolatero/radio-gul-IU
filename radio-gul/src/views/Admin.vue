@@ -9,7 +9,6 @@
 
     <div v-if="access == 1" id="admin">
       <HeaderAdmin />
-      <Footer />
     </div>
 
   </div>
