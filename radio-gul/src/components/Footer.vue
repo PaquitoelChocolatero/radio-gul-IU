@@ -36,7 +36,7 @@ export default {
     methods: {
         jump(){
             this.$router.push({
-                name: 'login'
+                name: 'admin'
             })
         }
     }

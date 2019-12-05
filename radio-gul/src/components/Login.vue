@@ -26,16 +26,7 @@
     },
     methods: {
       checkCredentials(){
-        if (this.user == this.credentials.user){
-          if (this.pass == this.credentials.pass){
-            this.jump()
-          }
-        }
-      },
-      jump(){
-        this.$router.push({
-          name: 'admin'
-        })
+        if (this.user == this.credentials.user && this.pass == this.credentials.pass) this.$emit('access');
       },
       home(){
         this.$router.push('/')

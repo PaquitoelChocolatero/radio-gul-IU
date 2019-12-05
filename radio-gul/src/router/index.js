@@ -5,7 +5,6 @@ import Search from '../views/Search.vue'
 import Program from '../views/Program.vue'
 import Player from '../views/Player.vue'
 import Admin from '../views/Admin.vue'
-import Login from '../views/LoginPage.vue'
 
 Vue.use(VueRouter)
 
@@ -30,11 +29,6 @@ const routes = [
     name: 'player',
     component: Player,
     props: true
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: Login
   },
   {
     path: '/admin',
