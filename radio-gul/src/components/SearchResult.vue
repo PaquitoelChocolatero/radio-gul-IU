@@ -3,10 +3,10 @@
         <div class="card clearfix">
             <div class="card-header clearfix">
                 <img class="program-img" v-bind:src="require(`@/assets/${program.img}`)">
-                
+
                 <p class="title">{{ program.name }}</p>
                 <br><br><br>
-                
+
                 <div class= "des">
                 <p class="description">{{ program.description }} </p>
                 </div>
@@ -46,13 +46,13 @@ export default {
     }
     .title{
         font-weight: bold;
-        font-size: 2em; 
+        font-size: 2em;
         color:rgb(0, 0, 0, 0.7);
         display: left;
         float: left;
     }
     .des{
-       
+
         text-align: justify;
     }
     .description{
@@ -75,7 +75,7 @@ export default {
         color: #FFF;
     }
     .clearfix {
-        overflow: auto;
+        /* overflow: auto; */
     }
     .card-header img {
         display: left;
