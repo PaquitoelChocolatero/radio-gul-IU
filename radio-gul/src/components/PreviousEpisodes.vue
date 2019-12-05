@@ -1,12 +1,16 @@
 <template>
   <div id="main">
     <h1> Programas sugeridos</h1>
-    <div class = "progsig">
-      <h2>Programa siguiente:</h2>
-    </div>
-    <div class = "progant">
-      <h3>Programas anteriores:</h3>
-    </div>
+    <ul>
+      <li class="list">
+          <img src="image.png" alt="icon"/>
+          <p>text goes here</P>
+      </li>
+      <li class="list">
+          <img src="image.png" alt="icon"/>
+          <p>text goes here</P>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -45,6 +49,23 @@ export default {
       text-align: left;
       margin-left: 5%;
       margin-bottom: 5%;
+    }
+
+    .list {
+      list-style-type: none;
+      margin-left:0px;
+      padding-left:0px;
+      /* display: inline-block; */
+    }
+
+    .list img {
+      float:left;
+    }
+
+    .list p,.list h3 {
+      text-align: right;
+      display:inline-block;
+      padding: 0;
     }
 
 </style>
