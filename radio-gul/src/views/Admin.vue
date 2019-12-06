@@ -1,8 +1,11 @@
 <template>
   <div>
+    <div v-show="flag" class="notify">
+      <h4>Invalid user or password</h4>  
+    </div>
 
     <div v-if="access == 0" id="login" class="full-size">
-      <Login class ="login-box" v-on:access='grantAccess()'/>
+      <Login class ="login-box" v-on:access='grantAccess()' v-on:error='showError()'></Login>
       <div class="fill"></div>
     </div>
 
@@ -17,12 +20,14 @@
 <script>
 import Login from "../components/Login.vue";
 import HeaderAdmin from "../components/HeaderAdmin.vue";
+import ClickOutside from 'vue-click-outside'
 
 export default {
   name: 'admin',
   data(){
     return{
-      access: 0
+      access: 0,
+      flag: 0
     }
   },
   components: {
@@ -31,13 +36,30 @@ export default {
   },
   methods: {
     grantAccess(){
+      this.hideError()
       this.access=1
+    },
+    showError(){
+      this.flag = true
+    },
+    hideError(){
+      this.flag = false
     }
+  },
+  directives: {
+    ClickOutside
   }
 }
 </script>
 
 <style scoped>
+
+  .notify{
+    width: 100%;
+    background-color: red;
+    color : white;
+  }
+
   div{
     cursor: default;
   }

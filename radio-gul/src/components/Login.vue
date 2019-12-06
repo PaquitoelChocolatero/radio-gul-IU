@@ -5,7 +5,7 @@
         <img src="@/assets/logo-blue.jpg" v-on:click="home()" height="80px">
         <h3>Admin Log-In</h3>
       </div>
-     <form method='post'>
+     <form>
         <input class="form-item" type="text" placeholder="Usuario" v-model="user" required>
         <input class="form-item" type="password" placeholder="Contraseña" v-model="pass" required>
         <button class="form-item" type='login-button' v-on:click="checkCredentials()">Login</button>
@@ -26,7 +26,11 @@
     },
     methods: {
       checkCredentials(){
-        if (this.user == this.credentials.user && this.pass == this.credentials.pass) this.$emit('access');
+        if (this.user == this.credentials.user && this.pass == this.credentials.pass) {
+          this.$emit('access')
+        }else {
+          this.$emit('error')
+        }
       },
       home(){
         this.$router.push('/')
@@ -37,6 +41,7 @@
 </script>
 
 <style scoped>
+
   .container{
     height: 30%;
     width: 30%;
