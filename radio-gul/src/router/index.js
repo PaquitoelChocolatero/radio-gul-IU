@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Search from '../views/Search.vue'
 import Program from '../views/Program.vue'
 import Player from '../views/Player.vue'
+import Live from '../views/Live.vue'
 import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
@@ -34,6 +35,11 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: Admin
+  },
+  {
+    path: '/live',
+    name: 'live',
+    component: Live
   }
 ]
 
