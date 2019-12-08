@@ -1,5 +1,6 @@
 <template>
   <div class="header" :style="{backgroundImage: `url(${bg})`}">
+    <img id = "live" src="../assets/live.gif" alt="live" width="auto" height="45" v-on:click="jump()">
     <div class="bar">
       <form action="">
         <input type="search" v-on:keyup.enter="submit()" ref='searchInput'>
@@ -22,6 +23,11 @@ import bg from '../assets/bg.jpg'
 export default {
     name: 'HeaderHome',
     methods: {
+      jump(){
+          this.$router.push({
+              name: 'live'
+          })
+      },
       submit(){
         this.$router.push({
           name: 'search',
@@ -32,7 +38,7 @@ export default {
       },
       home(){
         this.$router.push('/')
-      }     
+      }
     },
     data() {
       return {
@@ -52,10 +58,18 @@ export default {
     background-size: 100% auto;
     width: 100%;
   }
+
+  #live {
+    float: right;
+    border-radius: 5px;
+    margin-right: 1%;
+    margin-top: 0.8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   .bar {
     float: right;
-    margin-top: 30px;
-    margin-right: 5px;
+    margin-top: 2%;
+    margin-right: 1%;
   }
 
   .centered{
@@ -75,7 +89,7 @@ export default {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    animation: 
+    animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
   }

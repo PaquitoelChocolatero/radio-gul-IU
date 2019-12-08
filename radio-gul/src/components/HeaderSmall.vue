@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <img id = "live" src="../assets/live.gif" alt="live" width="auto" height="45" v-on:click="jump()">
     <div class="bar">
       <form action="">
         <input type="search" v-on:keyup.enter="submit()"  ref='searchInput'>
@@ -17,6 +18,11 @@
 export default {
     name: 'HeaderHome',
     methods: {
+      jump(){
+          this.$router.push({
+              name: 'live'
+          })
+      },
       submit(){
         this.$router.push({
           name: 'search',
@@ -27,7 +33,7 @@ export default {
       },
       home(){
         this.$router.push('/')
-      }     
+      }
     }
 }
 </script>
@@ -45,10 +51,16 @@ export default {
     width: 100%;
     height: 70px;
   }
+  #live {
+    float: right;
+    margin-top: 0.65%;
+    border-radius: 5px;
+    margin-right: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   .bar {
     float: right;
-    margin-top: 35px;
-    margin-right: 5px;
+    margin-right: 1%;
   }
   .left{
     cursor: pointer;
