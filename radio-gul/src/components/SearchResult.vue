@@ -52,7 +52,7 @@ export default {
         float: left;
     }
     .des{
-
+        height: 50%;
         text-align: justify;
     }
     .description{
@@ -71,11 +71,13 @@ export default {
         padding-right: 2%;
     }
     .card {
+        height: 80%;
         text-indent: 5px;
         color: #FFF;
     }
     .clearfix {
         /* overflow: auto; */
+        height: 80%;
     }
     .card-header img {
         display: left;
