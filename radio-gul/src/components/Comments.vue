@@ -37,13 +37,6 @@ export default {
     cursor: default;
     text-align: left;
   }
-  /*input{
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 1% 1% 1% 1%;
-    width: 77%;
-  }*/
   .publish{
     font-weight: bold;
     width:10%;
@@ -87,8 +80,6 @@ export default {
   #title{
     color: rgb(0, 0, 0, 0.7);
     text-align: left;
-    /* margin-left: 0.1%; */
-    /* padding-left: 1%; */
     font-size: 1.2em;
     border-bottom: 1px solid black;
     width: 100%;
@@ -102,6 +93,7 @@ export default {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
   }
   #comment{
     margin: 2% 2% 1% 1%; /* UP - RIGHT - DOWN - LEFT */
@@ -110,4 +102,7 @@ export default {
     width: 98%;
     background-color: #8ac3de;
   }
-</style>
+  #text{
+    overflow: auto;
+  }
+  </style>
