@@ -68,6 +68,7 @@ export default {
     border-radius: 5px;
     background-color: white;
     font-size: 1.2em;
+    cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #live {
@@ -75,6 +76,8 @@ export default {
     border-radius: 5px;
     margin-right: 1%;
     margin-top: -4%;
+    cursor: pointer;
+    background-color: #f2f2f3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .bar {

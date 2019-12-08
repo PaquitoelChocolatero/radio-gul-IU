@@ -5,7 +5,7 @@
       <SearchResultList v-bind:search='search'/>
       <twitter id='twitter'>
         <div slot="loading">loading ...</div>
-        <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='2' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
+        <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='20' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
       </twitter>
     </div>
     <Footer />
@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   div{
     cursor: default;
     height: 100%;
@@ -51,6 +51,11 @@ export default {
     display:inline;
     text-align:center;
   }
+  #twitter{
+    height: 600px;
+    overflow: auto;
+    margin-bottom: 1%;
+  }
   /* If on mobile */
   @media (max-width: 768px) {
     #twitter{
@@ -58,6 +63,8 @@ export default {
       margin-right: 1%;
       float: right;
       width: 33%;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
   /* If on desktop */
@@ -67,6 +74,8 @@ export default {
       margin-right: 1%;
       float: right;
       width: 20%;
+      border-radius: 3px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 </style>

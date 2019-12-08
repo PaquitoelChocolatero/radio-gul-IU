@@ -6,11 +6,11 @@
     </div>
     <div id='info'>
       <DescComment id='desc-comment' v-bind:episode='episode'/>
+      <twitter id='twitter'>
+        <div slot="loading">loading ...</div>
+        <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='20' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
+      </twitter>
     </div>
-    <twitter id='twitter'>
-      <div slot="loading">loading ...</div>
-      <a class="twitter-timeline" data-chrome="nofooter noheader" data-tweet-limit='20' href="https://twitter.com/radiogul?ref_src=twsrc%5Etfw">Tweets by Radio GUL</a>
-    </twitter>
     <Footer />
   </div>
 </template>
@@ -31,8 +31,7 @@ export default {
     Footer,
     AudioPlayer,
     Header,
-    DescComment,
-    twitter
+    DescComment
   },
   data(){
     return{
@@ -42,7 +41,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   div{
     cursor: default;
     height: 100%;
@@ -70,25 +69,15 @@ export default {
     margin-left: 1%;
   }
   #twitter{
-    height: 1000px;
+    height: 700px;
     overflow: auto;
-  }
-  /* If on mobile */
-  @media (max-width: 768px) {
-    #twitter{
-      margin-top: 1%;
-      margin-right: 1%;
-      float: right;
-      width: 33%;
-      border-radius: 3px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
   }
   /* If on desktop */
   @media (min-width: 768px) {
     #twitter{
-      margin-top: 1%;
-      margin-right: 1%;
+      margin-top: 0%;
+      margin-right: 50px;
+      margin-left: 5%;
       float: right;
       width: 20%;
       border-radius: 3px;

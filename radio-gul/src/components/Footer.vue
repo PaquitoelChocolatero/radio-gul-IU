@@ -71,7 +71,6 @@ export default {
         color: white;
         display:inline;
         text-align:center;
-        height: 45px;
     }
     #left{
         float: left;

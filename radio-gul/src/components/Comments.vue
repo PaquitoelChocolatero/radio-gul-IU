@@ -1,6 +1,6 @@
 <template>
   <div id="comments">
-    <p id='title'>Comments</p>
+    <p id='title'>Comentarios</p>
     <div id='input' class="input">
       <textarea type="text" placeholder="Type a comment..." ref='commentInput'></textarea>
       <br>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-show="flag" class="notify">
-      <h4>Invalid user or password</h4>  
+      <h4>Usuario o contraseña incorrectos</h4>  
     </div>
 
     <div v-if="access == 0" id="login" class="full-size">
@@ -14,7 +14,7 @@
       <HeaderAdmin />
       <jsoneditor v-model="json" :options="options" :plus="false" id='editor' @error="onError" />
       <div id='uploads'>
-        <upload v-model="fileList" title="Upload your files" :url="remoteUrl" name="Upload"/>
+        <upload v-model="fileList" title="Sube la imagen o archivo del programa" :url="remoteUrl" name="Upload"/>
       </div>
     </div>
 
