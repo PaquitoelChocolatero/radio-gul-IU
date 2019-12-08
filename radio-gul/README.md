@@ -1,24 +1,18 @@
-# radio-gul
+# Radio GUL
 
-## Project setup
+Este proyecto ha sido desarrollado con VueJS, como su "ejecución" es diferente a la de una web estática normal enumeramos a continuación los pasos necesarios para acceder a la práctica final
+
+## Cómo instalar las dependencias
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Para abrir la web
+```
+npx serve dist
+```
+
+#### En caso de que no funcione
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
