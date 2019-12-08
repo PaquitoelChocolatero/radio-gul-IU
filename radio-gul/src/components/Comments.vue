@@ -101,8 +101,10 @@ export default {
     border-radius: 5px;
     width: 98%;
     background-color: #8ac3de;
+    white-space: pre-line;
   }
   #text{
     overflow: auto;
+    white-space: pre-line;
   }
   </style>
