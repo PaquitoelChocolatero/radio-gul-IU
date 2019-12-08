@@ -28,8 +28,7 @@ export default {
           params: {
             q: this.$refs.searchInput.value
           }
-        }),
-        localStorage.setItem('search', this.$refs.searchInput.value)
+        })
       },
       home(){
         this.$router.push('/')

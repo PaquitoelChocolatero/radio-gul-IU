@@ -14,8 +14,7 @@
       <HeaderAdmin />
       <jsoneditor v-model="json" :options="options" :plus="false" id='editor' @error="onError" />
       <div id='uploads'>
-        <upload v-model="fileList" :url="remoteUrl" name="Images" id='uploadImage'/>
-        <upload v-model="fileList" :url="remoteUrl" name="Audio" />
+        <upload v-model="fileList" title="Upload your files" :url="remoteUrl" name="Upload"/>
       </div>
     </div>
 
@@ -108,8 +107,5 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  #uploadImage{
-    margin-right: 100px;
   }
 </style>
