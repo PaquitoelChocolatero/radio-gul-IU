@@ -1,6 +1,6 @@
 <template>
     <div id='list'>
-        <p id='title'>Resultados de '{{ search }}'</p>
+        <p id='title'>Resultados de '{{ this.$route.params.q }}'</p>
         <div id='results'>
             <SearchResult v-bind:key='program.id' v-for='program in matches' v-bind:program="program" id='result'/>
         </div>
@@ -25,7 +25,7 @@ export default {
     computed: {
         matches() {
             let matches = this.programs.filter((program) => {
-                return program.name.toLowerCase().includes(this.search.toLowerCase());
+                return program.name.toLowerCase().includes(this.$route.params.q.toLowerCase());
             })
             return matches;
         }
